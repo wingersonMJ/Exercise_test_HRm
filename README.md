@@ -12,7 +12,7 @@ Transparency of source code and results for a manuscript submitted to [journal t
 # Overview
 
 ## Background:
-Engaging in aerobic exercise soon after concussion is considered the standard of care treatment approach
+Engaging in aerobic exercise within days of concussion is the standard of care treatment approach [ref]().
 
 
 
