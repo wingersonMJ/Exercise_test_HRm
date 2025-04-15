@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Equation Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Y = 1.5x + 5.0</h2>
+
+<label for="xValue">Enter a value for x:</label><br>
+<input type="number" id="xValue" step="any">
+<button onclick="calculateY()">Calculate Y</button>
+
+<p id="result"></p>
+
+<script>
+    function calculateY() {
+        const x = parseFloat(document.getElementById("xValue").value);
+        if (isNaN(x)) {
+            document.getElementById("result").textContent = "Please enter a valid number.";
+            return;
+        }
+        const y = 1.5 * x + 5.0;
+        document.getElementById("result").textContent = `The value of y is: ${y}`;
+    }
+</script>
+
+</body>
+</html>
