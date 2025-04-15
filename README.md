@@ -77,6 +77,7 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 | Nausea, n (%)                    |      |           | 8 (7.92)       |             |
 | hr_baseline, mean (SD)           |      | 2         | 82.74 (12.02)  | 59, 111     |
 | highest_hr_achieved, mean (SD)   |      | 0         | 171.32 (17.57) | 120, 202    |
+| HRt (90% of highest hr), mean (SD)|     | 0         | 154.19 (15.82) | 108, 181.8  |
 | vas_baseline, mean (SD)          |      | 2         | 1.98 (1.65)    | 0.0, 6.4    |
 | highest_vas_achieved, mean (SD)  |      | 1         | 3.76 (2.15)    | 0.0, 9.1    |
 | highest_rpe_achieved, mean (SD)  |      | 0         | 15.50 (2.32)   | 8, 19       |
@@ -102,48 +103,42 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 | Ethnicity, n (%)                 | Hispanic/Latino || 17 (16.83)     | 5 (21.74)      | 12 (15.38)     | 0.563     |
 |                                  | Not Hispanic/Latino|| 76 (75.25)  | 15 (65.22)     | 61 (78.21)     |           |
 |                                  | Unknown or not reported|| 8 ()    | 3 ()           | 5 ()           |           |
-| migraine history, n (%)          | No  |           | 83 (82.18)     | 17 (73.91)     | 66 (84.62)     | 0.357     |
-|                                  | Yes  |           | 17 (16.83)     | 6 (26.09)      | 11 (14.10)     |           |
-|                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
-| add history, n (%)               | No  |           | 83 (82.18)     | 19 (82.61)     | 64 (82.05)     | 0.860     |
-|                                  | Yes  |           | 17 (16.83)     | 4 (17.39)      | 13 (16.67)     |           |
-|                                  |Missing|           | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
-| anx history, n (%)               | No  |           | 78 (77.23)     | 19 (82.61)     | 59 (75.64)     | 0.715     |
+| anx history, n (%)               | No  |            | 78 (77.23)     | 19 (82.61)     | 59 (75.64)     | 0.715     |
 |                                  | Yes  |           | 22 (21.78)     | 4 (17.39)      | 18 (23.08)     |           |
-|                                  |Missing|           | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
-| dep history, n (%)               | No  |           | 84 (83.17)     | 19 (82.61)     | 65 (83.33)     | 0.562     |
+|                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
+| dep history, n (%)               | No  |            | 84 (83.17)     | 19 (82.61)     | 65 (83.33)     | 0.562     |
 |                                  | Yes  |           | 14 (13.86)     | 4 (17.39)      | 10 (12.82)     |           |
-|                                  |Missing|           | 3 (2.97)       | 0 (0.00)       | 3 (3.85)       |           |
-| msk injury history, n (%)        | No  |           | 30 (29.70)     | 8 (34.78)      | 22 (28.21)     | 0.731     |
+|                                  |Missing|          | 3 (2.97)       | 0 (0.00)       | 3 (3.85)       |           |
+| msk injury history, n (%)        | No  |            | 30 (29.70)     | 8 (34.78)      | 22 (28.21)     | 0.731     |
 |                                  | Yes  |           | 70 (69.31)     | 15 (65.22)     | 55 (70.51)     |           |
 |                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
-| loss of conciousness, n (%)      | No  |           | 85 (84.16)     | 20 (86.96)     | 65 (83.33)     | 0.824     |
+| loss of conciousness, n (%)      | No  |            | 85 (84.16)     | 20 (86.96)     | 65 (83.33)     | 0.824     |
 |                                  | Yes  |           | 15 (14.85)     | 3 (13.04)      | 12 (15.38)     |           |
 |                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
-| experienced amnesia, n (%)       | No  |           | 80 (79.21)     | 16 (69.57)     | 64 (82.05)     | 0.362     |
+| experienced amnesia, n (%)       | No  |            | 80 (79.21)     | 16 (69.57)     | 64 (82.05)     | 0.362     |
 |                                  | Yes  |           | 19 (18.81)     | 6 (26.09)      | 13 (16.67)     |           |
 |                                  |Missing|          | 2 (1.98)       | 1 (4.35)       | 1 (1.28)       |           |
-| Injured during sports, n (%)     | No  |           | 16 (15.84)     | 5 (21.74)      | 11 (14.10)     | 0.596     |
+| Injured during sports, n (%)     | No  |            | 16 (15.84)     | 5 (21.74)      | 11 (14.10)     | 0.596     |
 |                                  | Yes  |           | 84 (83.17)     | 18 (78.26)     | 66 (84.62)     |           |
 |                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
-| Engaging in PA currently, n (%)  | No  |           | 50 (49.50)     | 13 (56.52)     | 37 (47.44)     | 0.594     |
+| Engaging in PA currently, n (%)  | No  |            | 50 (49.50)     | 13 (56.52)     | 37 (47.44)     | 0.594     |
 |                                  | Yes  |           | 49 (48.51)     | 10 (43.48)     | 39 (50.00)     |           |
 |                                  |Missing|          | 2 (1.98)       | 0 (0.00)       | 2 (2.56)       |           |
-| concussion history, n (%)        | No  |           | 46 (45.54)     | 11 (47.83)     | 35 (44.87)     | 0.844     |
+| concussion history, n (%)        | No  |            | 46 (45.54)     | 11 (47.83)     | 35 (44.87)     | 0.844     |
 |                                  | Yes  |           | 54 (53.47)     | 12 (52.17)     | 42 (53.85)     |           |
 |                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
-| FiveP score, mean (SD)           |      | 0         | 7.86 (1.74)    | 8.52 (1.50)    | 7.67 (1.77)    | **0.027**     |
-| Time to visit 1, mean (SD)       |      | 0         | 13.22 (4.37)   | 11.52 (3.95)   | 13.72 (4.38)   | **0.028**     |
+| FiveP score, mean (SD)           |      | 0         | 7.86 (1.74)    | 8.52 (1.50)    | 7.67 (1.77)    | **0.027** |
+| Time to visit 1, mean (SD)       |      | 0         | 13.22 (4.37)   | 11.52 (3.95)   | 13.72 (4.38)   | **0.028** |
 | PCSI pre-injury, mean (SD)       |      | 2         | 10.74 (13.51)  | 11.57 (10.90)  | 10.49 (14.26)  | 0.702     |
-| PCSI current, mean (SD)          |      | 1         | 41.01 (23.82)  | 56.26 (23.63)  | 36.45 (22.05)  | **0.001**     |
+| PCSI current, mean (SD)          |      | 1         | 41.01 (23.82)  | 56.26 (23.63)  | 36.45 (22.05)  | **0.001** |
 | hads_anx_subscale, mean (SD)     |      | 1         | 5.61 (3.89)    | 6.74 (4.35)    | 5.27 (3.71)    | 0.153     |
-| hads_depress_subscore, mean (SD) |      | 1         | 4.56 (3.23)    | 5.78 (2.88)    | 4.19 (3.26)    | **0.030**     |
-| Diziness handicap score, mean (SD)|     | 2         | 23.17 (18.14)  | 36.00 (15.49)  | 19.29 (17.14)  | **<0.001**    |
-| Neck disability index, mean (SD) |      | 14        | 11.59 (7.47)   | 16.75 (7.52)   | 10.04 (6.77)   | **0.001**     |
+| hads_depress_subscore, mean (SD) |      | 1         | 4.56 (3.23)    | 5.78 (2.88)    | 4.19 (3.26)    | **0.030** |
+| Diziness handicap score, mean (SD)|     | 2         | 23.17 (18.14)  | 36.00 (15.49)  | 19.29 (17.14)  | **<0.001**|
+| Neck disability index, mean (SD) |      | 14        | 11.59 (7.47)   | 16.75 (7.52)   | 10.04 (6.77)   | **0.001** |
 
 
-## Factors associated with exercise test highest heart rate:
-**Table B (not for text, can describe in results):** Association of participant characteristics with the ending heart rate achieved on the exercise test. 
+## Factors associated with exercise test HRt:
+**Table B (not for text, can describe in results):** Association of participant characteristics with the exercise test HRt (90% of highest achieved HR). 
 |                                  | Spearman Rho Correlation       | P-Value       |
 |----------------------------------|--------------------------------|---------------|
 | Time to Visit 1                  | 0.07                           | 0.46          | 
@@ -156,9 +151,10 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 | Diziness handicap score          | -0.19                          | 0.07          | 
 | Neck disability index            | -0.23                          | **0.03**      | 
 
-*Interpretation:* The ending heart rate achieved during exercise testing was significantly associated with age (Rho: -0.27, p=0.008) and PCSI score (Rho: -0.20, p=0.04), such that as age and PCSI score increase, the highest achieved heart rate during exercise testing is expected to decrease. No other participant factors were associated with the ending heart rate achieved during exercise testing, including sex (median diff: 0.5bpm, p=0.47), concussion history (median diff: 1.3bpm, p=0.93), and whether or not the participant had already begun physical activity at the time of testing (median diff: 4.1bpm, p=0.73).
+*Interpretation:* HRt after exercise testing was significantly associated with age (Rho: -0.27, p=0.008) and PCSI score (Rho: -0.20, p=0.04), such that as age and PCSI score increase, HRt is expected to decrease. No other participant factors were associated with HRt, including sex (median diff: 0.5bpm, p=0.47), concussion history (median diff: 1.3bpm, p=0.93), and whether or not the participant had already begun physical activity at the time of testing (median diff: 4.1bpm, p=0.73).
 
 ## HRm performance metrics:
+
 
 ## Optimal HRm methods:
 
