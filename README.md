@@ -179,20 +179,32 @@ And here is the actual figure to put in the manuscript:
 
 The 50% HRm method includes a caveat that the patient should start at 50% HRm, but increase heart rate by 5% of HRm each day that exercise is tollerated until reaching 80% HRm. Another way to think about error in this case is to calculate the number of days it would take, if participants continued increasing by 5% each day as is suggested, before they finally get to a heart rate that matches their HRt. In other words, when increasing that shaded region in the figure by 5% each day, how many days will it take on average before that shaded region captures the participants actual HRt. **Days needed to capture: 6.08 days.** This means if I provided a participant with this 50% HRm prescription and told them to increase by 5% each day that symptoms were tollerated, then it would take on average 6.08 days of exercise before that participant reached the HRt that I could have provided on day 1 if I just did the exercise test. <- if this doesnt make sense, lmk. 
 
-capture rate: 0%
-RMSE: 54.4
-AME: 52.1
-Days needed to capture: 6.08 days
+capture rate: 0%  
+RMSE: 54.4  
+AME: 52.1  
+Days needed to capture: 6.08 days  
 
 ---
 
 ## Optimal HRm methods:
 
+
+
+capture rate: 27.0%
+RMSE: 15.6
+AME: 12.1
+
 ## Personalized prescription in the absence of exercise testing:
 
 
 
-optimal capture rate: 27%
+
+
+
+
+
+
+
 
 Prediction 99% CI: 47%
 
