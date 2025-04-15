@@ -311,15 +311,6 @@ CI width: 14.6bpm, range = 7.5, 33.4
 Capture rate: 82.8%
 CI width: 38.7bpm, range =  37.7, 43.2
 
-
-**Why not bootstrap for CI's:**
-
-
-
-
-
-
-
 --- 
 
 # Key take-aways
