@@ -289,6 +289,10 @@ There are two approaches that we can use for confidence intervals (CI). We could
 
 **Figure F:** Prediction model plotted alongside the actual bike test HRt values, with 95% Confidence Interval Included.  
 <img src="figs/Prediction_model_95CImean.png" alt="prediction model and 95% CI" width="1000">  
+*Interpretation:* The capture rate for the 95% CI range is 50.6%. The average width of the confidence interval is 14.6bpm, with a range of 7.5 to 33.4bpm. So our capture rate of 50.6% is better than the 76%HRm method capture rate of 27%, and does so by only increase the prediction interval from 10bpm to an average of 14.6bpm.  
+
+Capture rate: 50.6%
+CI width: 14.6bpm, range = 7.5, 33.4
 
 
 **CI's based on prediction intervals:***
@@ -302,8 +306,10 @@ There are two approaches that we can use for confidence intervals (CI). We could
 
 **Figure G:** Prediction model plotted alongside the actual bike test HRt values, with 95% Confidence Interval Included.  
 <img src="figs/Prediction_model_80CIobservation.png" alt="prediction model and 80% CI for the individual prediction" width="1000">  
+*Interpretation:* The capture rate for an 80% CI range that is based on individual prediction (i.e., not population mean, so will be wider despite being less confident) is 82.8%. The average width of the confidence interval is 38.7bpm, with a range of 37.7 to 43.2bpm. So our capture rate of is higher than the CI interval above, but the interval range is substantially larger.   
 
-
+Capture rate: 82.8%
+CI width: 38.7bpm, range =  37.7, 43.2
 
 
 **Why not bootstrap for CI's:**
@@ -313,18 +319,18 @@ There are two approaches that we can use for confidence intervals (CI). We could
 
 
 
-Prediction 99% CI: 50.6%
-
-Prediction and 82.8% CI for individual observations: 
 
 --- 
 
 # Key take-aways
 
+To complete when we have agreed on an approach...
 
 ---
 
 # Statistical Methods Write-up
+
+To complete when we have agreed on an approach...
 
 
 ---
