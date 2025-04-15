@@ -215,10 +215,42 @@ Days to capture: 2.13
 
 **To me, the information above is plenty for a manuscript.**  
 
-**However, you know I can't resist a prediction model...*** 
+**However, you know I can't resist a prediction model...**
 
 ---
 ## Personalized prescription in the absence of exercise testing:
+76%HRm as a prescription has less error, a better capture rate, and fewer days to capture compared to a 50%HRm recomendation. However, undergoing exercise testing and obtaining an actual HRt is still a 'gold standard' approach. Why? Because the exercise test is specific to each individual. Above we identified a number of measured characteristics that affect the HRt, such as intitial symptom severity, age, etc. There may also be unmeasured factors (confounders) that we don't know about, didn't measure, etc. that could also affect a persons HRt. So actually getting them on the exercise bike and deriving a HRt is the best approach. Even when using the 76%HRm method, the predicted heart rate only differs between subjects by about 2bpm. Which means everyone is essentially getting the exact same recomendation. This is not personalized medicine at all... 
+
+Sooooooo, the question is: can we take this existing HRm method and account for some other important participant characteristics? 
+
+We identified earlier that HRt is univariably associated with only a few factors: PCSI score, age, Neck Disability Index score, and HADS depression score. If we wanted to add one more factor to the model, we could adjust for time since injury even though it was not significant. Adding time since injury essentially controls for the ammount of 'recovery' that could've happened before the participant arrives in our lab for exercise testing. 
+
+**Results of personalize predictive model (N=83 due to missing data in predictors):***
+
+**Table E (not for text):** I was concerned about multicolinearity when including PCSI, time to visit, NDI and HADS depression subscores all in the same model. Often times these factors move together. However, VIF was low for all variables, so must not be an issue. No need to include this information in the manuscript; just showing David that I checked for VIF :)
+| Feature  | Varuance of Inflation Factor (VIF) |
+| -------- | ---------------------------------- |
+| PCSI Score | 1.92 |
+| Age | 1.06 | 
+| Time to visit 1 | 1.04 |
+| NDI score | 1.56 | 
+| HADS depres | 1.55 | 
+
+RMSE: 13.98  
+AME: 10.9 
+Adj R2: 0.09
+
+Model Equation:  
+HRt = 185.83761756665606 + (-0.063 * pcsi_total_current) + (-1.879 * age_visit) + (0.473 * doi_to_v1) + (-0.209 * ndi_score) + (-0.646 * hads_depress_subscore)  
+
+Model Equation Simplified:  
+HRt =
+- 186bpm as a starting place
+  - subtract 0.06 x PCSI score... so kids who are more symptomatic will have a lower predicted HRt
+  - subtract 1.9 x age... so older kids will have a lower predicted HRt
+  - add 0.5 x days since injury... so those further out from injury will have a higher HRt
+  - subtract 0.2 x Neck Disability Index score... so those with neck issue will have a lower HRt
+  - subtract 0.6 x HADS depression score... so those with more depression symptoms will have a lower HRt
 
 
 
