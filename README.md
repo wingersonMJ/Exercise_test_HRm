@@ -34,7 +34,8 @@ Last, though exercise testing is ideal for developing personalized HRt prescript
 # Methods
 
 ## Exercise testing:
-The graded YMCA protocol. 
+The graded YMCA protocol. [[ref](https://pubmed.ncbi.nlm.nih.gov/35489100/) - our work!].  
+[[ref](https://pubmed.ncbi.nlm.nih.gov/40135995/)]
 
 ## HRm Method:
 50% of HRm
@@ -47,6 +48,12 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 # Findings and Figures
 
 ## Exercise test performance:
+**Figure 1:** Changes in heart rate, symptoms (visual analog scale), and rating of percieved exertion throughout the exercise test. Mean values at each minute were calculated and plot for those who stopped due to symptom exacerbation vs those who reached exhaustion or completed the protocol. 
+<img src="figs/Figure1.png" alt="exercise test performance" width="1000">  
+
+
+
+*Interpretation:* No significant differences in the heart rate achieved during the test, or in the progression 
 
 ## Factors associated with stop criteria:
 
