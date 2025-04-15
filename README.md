@@ -12,37 +12,37 @@ Transparency of source code and results for a manuscript submitted to [journal t
 # Overview
 
 ## Background:
-Engaging in aerobic exercise within days of concussion is the standard of care treatment approach [[ref](https://pubmed.ncbi.nlm.nih.gov/37316185/)]. While the precise dosage of exercise that is optimal for treatment of post-concussion symptoms and other impairments remains a popular research topic, consensus has generally been reached that exercise at an intensity, duration, and frequency that does not exacerbate symptoms is considered safe and beneficial for recovery [[ref](https://pubmed.ncbi.nlm.nih.gov/37316210/), [ref](https://pubmed.ncbi.nlm.nih.gov/30715132/)].  
+Engaging in aerobic exercise within days of concussion is the standard of care treatment approach [[ref](https://pubmed.ncbi.nlm.nih.gov/37316185/)]. While the precise dosage of exercise optimal for treatment of post-concussion symptoms and other impairments remains a popular research topic, consensus has generally been reached that exercise at an intensity, duration, and frequency that does not exacerbate symptoms is considered safe and likely beneficial for recovery [[ref](https://pubmed.ncbi.nlm.nih.gov/37316210/), [ref](https://pubmed.ncbi.nlm.nih.gov/30715132/)].  
 
-A common practice for prescribing exercise in clinical settings is through the use of an exercise test [[ref](https://pubmed.ncbi.nlm.nih.gov/40135995/)]. In the controlled clinical setting, a graded exercise test can gradually increase heart rate from resting to moderate/high intensity over the course of 10-15 minutes. Clinicians can monitor patients during the test, looking for one of two stopping criteria: a) an increase in symptoms that is more than mild, b) reaching the point of self-reported exhaustion (typically reported through a percieved exertion scale), or a heart rate that approaches the patients age-predicted maximum heart rate (220bmp - age, HRm), also considered exhaution. Uppon reaching a stopping criteria, clinicians can measure the highest heart rate achieved on the test, refered to as the symptom threshold, or the maximum heart rate the patient is able to tolerate before symptoms increase or exhaustion is reached. The clinician is then able to prescribe 80-90% of this highest heart rate as the heart rate target (HRt), which provides a patient-specific exercise recomendation to perform as part of their recovery. Past work has shown that a HRt of 90% of the highest achieved heart rate during testing for 20-30 minutes, 4-5 days per week is safe and effacous for recovery [[ref](https://pubmed.ncbi.nlm.nih.gov/35489100/) - our work!].  
+A common practice for prescribing exercise in clinical settings is through exercise testing [[ref](https://pubmed.ncbi.nlm.nih.gov/40135995/)]. In controlled clinical settings, a graded exercise test can gradually increase heart rate from resting to moderate/high intensity for 10-15 minutes. Clinicians can monitor patients during the test, looking for one of two stopping criteria: a) an increase in symptoms that is more than mild, b) reaching the point of self-reported exhaustion (typically reported through a percieved exertion scale), or a heart rate that approaches the patients age-predicted maximum heart rate (220bmp - age, HRm), also considered exhaution. Upon reaching a stopping criteria, clinicians can measure the highest heart rate achieved on the test, called the symptom threshold, defined as the maximum heart rate the patient can tolerate before symptoms increase or exhaustion is reached. The clinician can then prescribe 80-90% of this highest heart rate as the heart rate target (HRt), which provides a patient-specific exercise recommendation. Past work has shown that  an HRt that is 90% of the highest achieved heart rate during testing can be safely performed for 20-30 minutes, 4-5 days per week, after concussion [[ref](https://pubmed.ncbi.nlm.nih.gov/35489100/) - our work!].  
 
 ## Knowledge Gaps:
-Though exercise testing for the purposes of deriving patient-specific HRt's is standard clinical practice, no research has systematically described performance during exercise testing with respect to the progression of patient heart rate, rating of percieved exertion, or symptom exacerbation. Demographic, injury, and clinical factors associated with the stopping criteria, or the highest heart rate achieved on the test, have also not been investigated.
+Though exercise testing to derive patient-specific HRt's is standard clinical practice, no research has systematically described performance during exercise testing with respect to the progression of patient heart rate, rating of perceived exertion, or symptom exacerbation. Demographic, injury, and clinical factors associated with the stopping criteria or the highest heart rate achieved on the test have also not been investigated.
 
-Last, though exercise testing is ideal for developing personalized HRt prescriptions for adolescents after concussion, alternative methods exist for deriving heart rate prescriptions in the abscence of exercise tests. One such example is to prescribe 50% of the patients age-predicted maximum heart rate (220bpm - age, HRm). However, this recommendation is an approximation of what it is believed patients will achieve if they had recieved an exercise test, and the actual value ranges from 50-80% of HRm, a wide range that lacks evidential support. 
+Last, while exercise testing is the gold standard for developing personalized HRt prescriptions for adolescents following concussion, alternative methods are available when such testing is not feasible. A common approach is to prescribe 50% of the patient's age-predicted maximum heart rate (HRm), calculated as 220 beats per minute minus the patient's age. However, this method is a rough estimate of the HRt a patient might reach during an exercise test. In practice, actual HRt values can vary widely, and the accuracy of a 50%HRm method compared to an exercise test-derived HRt has not been established. 
 
 ## Objective:
 1. To compare demographics, injury, and clinical characteristics among participants with concussion based on exercise test stop criteria: symptom exacerbation vs exhaustion.
 
-2. To determine if demographics, injury, or clinical characteristics are associated with the maximum achieved heart rate on the exercise test.
+2. To determine if demographics, injury, or clinical characteristics are associated with the HRt derived from an exercise test.
 
-3. To evaluate the accuracy of a 50% HRm method for prescirbing a HRt compared to the HRt derived from exercise testing. 
+3. To evaluate the accuracy of a 50%HRm method for prescribing exercise compared to the HRt derived from an exercise test. 
 
 ---
 
 # Methods
 
 ## Exercise testing:
-The graded YMCA protocol is described in our past exercise RCT [[ref](https://pubmed.ncbi.nlm.nih.gov/35489100/) - our work!]. It is similar to the Buffalo Concussion Test described here, but has some important differences that you will see [[ref](https://pubmed.ncbi.nlm.nih.gov/40135995/)]. Big picture summary: The test begins with a baseline measure of resting heart rate, then progresses through stages of exercise on a stationary bike for ~15 minutes. The beginning stages are low rpm (revolutions per minute) and low resistance (Watts). Every 2-3 minutes the rpms and resistance are increased to evoke a heart rate response (increase). The test is over when all stages are completed, or when one of two stop critera are met: 1) symptoms increase more than mildly, or 2) exhaustion is reached. A symptom increase of more than mild is defined as >3.0 points on a 10-point Visual Analog Scale (VAS), where 0.0 represents no symptoms and 10.0 represent the worst symptoms you can have. Exhaustion is defined as >= 17-points on the Borg's Rating of Percieved Exertion (RPE), where 6 represents resting effort and 20 represent the most effort a participant could give (17 generally equated to working "Very Hard"). Exhaustion could also be met if the participant reaches their age-predicted maximum heart rate (220bpm - age). The test can also be stopped if the pariticpant completes all stages, totally approximately 15 minutes of exercise. The highest heart rate achieved during the test is then multiplied by 0.90 (90%) to obtain the heart rate target (HRt). 
+The graded YMCA protocol is described in our past RCT [[ref](https://pubmed.ncbi.nlm.nih.gov/35489100/) - our work!]. It is similar to the Buffalo Concussion Test described here but has some important differences that you will see [[ref](https://pubmed.ncbi.nlm.nih.gov/40135995/)]. Big picture summary: The test begins with a baseline measure of resting heart rate, then progresses through stages of exercise on a stationary bike for ~15 minutes. The beginning stages are low rpm (revolutions per minute) and low resistance (Watts). Every 2-3 minutes, the rpm and resistance are increased to evoke a heart rate response (increase). The test is over when all stages are completed or when one of two stop criteria are met: 1) symptoms increase more than mildly, or 2) exhaustion is reached. A symptom increase of more than mild is defined as >3.0 points on a 10-point Visual Analog Scale (VAS), where 0.0 represents no symptoms and 10.0 represents the worst symptoms you can have. Exhaustion is defined as >= 17 points on the Borg's Rating of Percieved Exertion (RPE), where 6 represents resting effort and 20 represents the most effort a participant could give (17 generally equates to working "Very Hard"). Exhaustion could also be met if the participant reaches their age-predicted maximum heart rate (220bpm - age). The test can also be stopped if the participant completes all stages. The highest heart rate achieved during the test is multiplied by 0.90 (90%) to obtain the heart rate target (HRt). 
 
-For the purposes of analysis, we grouped participants as having symptom exacerbation during the test vs reaching exhaustion/completing the protocol. 
+For objective #1, we grouped participants as experiencing symptom exacerbation during the test vs reaching exhaustion/completing the protocol.  
 
 ## HRm Method:
-Though exercise testing is ideal for developing personalized HRt prescriptions for adolescents after concussion, exercise testing can be burdensome (time, resource, and expertise demands). Therefore, past research has established alternative methods for generating heart rate prescriptions for patients in the abscense of exercise testing [[ref](https://pubmed.ncbi.nlm.nih.gov/32058454/)]. One approach established in previous work is to prescribe a portion of the patients age-predicted maximum heart rate (HRm). It has been suggested that 50% of HRm is recommended for patients as a starting point for exercise, progressing by +5% every day as symptoms allow up to a maximum of 80% HRm. 
+Past research has established alternative methods for generating heart rate prescriptions in the absence of exercise testing [[ref](https://pubmed.ncbi.nlm.nih.gov/32058454/)]. One approach established in previous work is to prescribe a portion of the patient's age-predicted maximum heart rate (HRm). Specifically, patients might begin exercising at 50% of their HRm, with daily increases of 5% as tolerated, up to a maximum of 80%HRm.
 
-**Definitions:**
+**Definitions**
 HRt = Heart rate target, 90% of the highest heart rate achieved on exercise testing.
-HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205bpm if age == 15years).
+HRm = Heart rate max, calculated as 220bpm minus the participant's age (i.e., 205bpm if age == 15years).
 
 ---
 
@@ -51,7 +51,7 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 ## Pre-processing:
 **Figure A (not for text):** Kernel density plot showing the distribution of the highest heart rate achieved on the exercise test in our sample. N=105
 <img src="figs/pre-processing_kernelDensity.png" alt="KD pre-processing" width="1000">  
-*Interpretation:* A majority of subjects reached a heart rate of between 150bpm and 200bpm during the test. Almost no one went above 200bpm and a smaller portion of the sample was between 100 and 150bpm. 
+*Interpretation:* A majority of subjects reached a heart rate of between 150bpm and 200bpm during the test. Almost no one went above 200bpm, and a smaller portion of the sample was between 100 and 150bpm. 
 **Important on this plot is the small 'bump' at ~75bpm. N=4 subjects had a highest achieved heart rate of between 72 and 90bpm. These values are closer to what we would expect for a resting heart rate, not an ending heart rate. These points likely reflect an error in the data. Therefore, they were removed from the analysis.**
 
 **Figure B (not for text):** Kernel density plot showing the distribution of the highest heart rate achieved on the exercise test in our sample. N=101
@@ -59,7 +59,7 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 *Interpretation:* This is the same density plot as above, but with the N=4 outlier subjects removed. 
 
 ## Exercise test performance:
-**Figure 1:** Changes in heart rate, symptoms (visual analog scale), and rating of percieved exertion throughout the exercise test. Mean values at each minute were calculated and ploted for those who stopped due to symptom exacerbation vs those who reached exhaustion or completed the protocol. 
+**Figure 1:** Changes in heart rate, symptoms (visual analog scale), and rating of perceived exertion throughout the exercise test. Mean values at each minute were calculated and plotted for those who stopped due to symptom exacerbation vs those who reached exhaustion or completed the protocol. 
 <img src="figs/Figure1.png" alt="exercise test performance" width="1000">  
 *Interpretation:* No significant differences in the heart rate achieved during the test, or in the progression of heart rate throughout the test, between those who stopped due to symptoms and those who reached exhaustion or completed the protocol. 
 
@@ -82,7 +82,7 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 | highest_vas_achieved, mean (SD)  |      | 1         | 3.76 (2.15)    | 0.0, 9.1    |
 | highest_rpe_achieved, mean (SD)  |      | 0         | 15.50 (2.32)   | 8, 19       |
 
-*How I would write this up:* Among 101 participants who underwent the exercise test, a majority were routed to the easiest test branch (n=78, 77%), and a smaller proportion completed the medium and hard branches (n=18, 18%; n=3, 3%). The most commonly reported symptoms during the test were headache, endorsed by 42% (n=42) of participants, followed by diziness (n=22, 22%), fatigue (n=11, 11%), and nausea (n=8, 8%). Participant highest achieved heart rate ranged from 120bpm to 202bpm, with a mean+/-standard deviation of 171.3+/-17.6bpm. Baseline VAS ranged from 0.0 to 6.4 (mean+/-sd = 1.98+/-1.7) and the highest VAS reached ranged from 0.0 to 9.1 (3.76+/-2.2). The highest RPE achieved during the test ranged from 8 to 19 on the Borg's RPE scale (15.5+/-2.3). 
+*How I would write this up:* Among 101 participants who underwent the exercise test, a majority were routed to the easiest test branch (n=78, 77%), and a smaller proportion completed the medium and hard branches (n=18, 18%; n=3, 3%). The most commonly reported symptoms during the test were headache, endorsed by 42% (n=42) of participants, followed by dizziness (n=22, 22%), fatigue (n=11, 11%), and nausea (n=8, 8%). participant's highest achieved heart rate ranged from 120bpm to 202bpm, with a mean+/-standard deviation of 171.3+/-17.6bpm. Baseline VAS ranged from 0.0 to 6.4 (mean+/-sd = 1.98+/-1.7), and the highest VAS reached ranged from 0.0 to 9.1 (3.76+/-2.2). The highest RPE achieved during the test ranged from 8 to 19 on the Borg's RPE scale (15.5+/-2.3). 
 
 ---
 
@@ -95,7 +95,6 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 | Age (years), mean (SD)           |      | 1         | 15.87 (1.48)   | 16.05 (1.51)   | 15.82 (1.47)   | 0.527     |
 | sex, n (%)                       | Male |           | 51 (50.50)     | 9 (39.13)      | 42 (53.85)     | 0.369     |
 |                                  |Female|           | 49 (48.51)     | 14 (60.87)     | 35 (44.87)     |           |
-|                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
 | American Indian or Alaska Native, n (%)||           | 4 (3.96)       | 0 (0.00)       | 4 (5.13)       |           |
 | Asian, n (%)                     |      |           | 2 (1.98)       | 0 (0.00)       | 2 (2.56)       |           |
 | Black or African-American, n (%) |      |           | 12 (11.88)     | 4 (17.39)      | 8 (10.26)      |           |
@@ -107,28 +106,20 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 |                                  | Unknown or not reported|| 8 ()    | 3 ()           | 5 ()           |           |
 | anx history, n (%)               | No  |            | 78 (77.23)     | 19 (82.61)     | 59 (75.64)     | 0.715     |
 |                                  | Yes  |           | 22 (21.78)     | 4 (17.39)      | 18 (23.08)     |           |
-|                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
 | dep history, n (%)               | No  |            | 84 (83.17)     | 19 (82.61)     | 65 (83.33)     | 0.562     |
 |                                  | Yes  |           | 14 (13.86)     | 4 (17.39)      | 10 (12.82)     |           |
-|                                  |Missing|          | 3 (2.97)       | 0 (0.00)       | 3 (3.85)       |           |
 | msk injury history, n (%)        | No  |            | 30 (29.70)     | 8 (34.78)      | 22 (28.21)     | 0.731     |
 |                                  | Yes  |           | 70 (69.31)     | 15 (65.22)     | 55 (70.51)     |           |
-|                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
 | loss of conciousness, n (%)      | No  |            | 85 (84.16)     | 20 (86.96)     | 65 (83.33)     | 0.824     |
 |                                  | Yes  |           | 15 (14.85)     | 3 (13.04)      | 12 (15.38)     |           |
-|                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
 | experienced amnesia, n (%)       | No  |            | 80 (79.21)     | 16 (69.57)     | 64 (82.05)     | 0.362     |
 |                                  | Yes  |           | 19 (18.81)     | 6 (26.09)      | 13 (16.67)     |           |
-|                                  |Missing|          | 2 (1.98)       | 1 (4.35)       | 1 (1.28)       |           |
 | Injured during sports, n (%)     | No  |            | 16 (15.84)     | 5 (21.74)      | 11 (14.10)     | 0.596     |
 |                                  | Yes  |           | 84 (83.17)     | 18 (78.26)     | 66 (84.62)     |           |
-|                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
 | Engaging in PA currently, n (%)  | No  |            | 50 (49.50)     | 13 (56.52)     | 37 (47.44)     | 0.594     |
 |                                  | Yes  |           | 49 (48.51)     | 10 (43.48)     | 39 (50.00)     |           |
-|                                  |Missing|          | 2 (1.98)       | 0 (0.00)       | 2 (2.56)       |           |
 | concussion history, n (%)        | No  |            | 46 (45.54)     | 11 (47.83)     | 35 (44.87)     | 0.844     |
 |                                  | Yes  |           | 54 (53.47)     | 12 (52.17)     | 42 (53.85)     |           |
-|                                  |Missing|          | 1 (0.99)       | 0 (0.00)       | 1 (1.28)       |           |
 | FiveP score, mean (SD)           |      | 0         | 7.86 (1.74)    | 8.52 (1.50)    | 7.67 (1.77)    | **0.027** |
 | Time to visit 1, mean (SD)       |      | 0         | 13.22 (4.37)   | 11.52 (3.95)   | 13.72 (4.38)   | **0.028** |
 | PCSI pre-injury, mean (SD)       |      | 2         | 10.74 (13.51)  | 11.57 (10.90)  | 10.49 (14.26)  | 0.702     |
@@ -137,6 +128,8 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 | hads_depress_subscore, mean (SD) |      | 1         | 4.56 (3.23)    | 5.78 (2.88)    | 4.19 (3.26)    | **0.030** |
 | Diziness handicap score, mean (SD)|     | 2         | 23.17 (18.14)  | 36.00 (15.49)  | 19.29 (17.14)  | **<0.001**|
 | Neck disability index, mean (SD) |      | 14        | 11.59 (7.47)   | 16.75 (7.52)   | 10.04 (6.77)   | **0.001** |
+
+*One subject did not complete the intake form, so some of the categorical variables will be 1 short of N=101.*
 
 ---
 
