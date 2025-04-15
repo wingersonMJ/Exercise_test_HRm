@@ -129,7 +129,7 @@ HRm = Heart rate max, calculated as 220bpm minus the participant's age (i.e., 20
 | Diziness handicap score, mean (SD)|     | 2         | 23.17 (18.14)  | 36.00 (15.49)  | 19.29 (17.14)  | **<0.001**|
 | Neck disability index, mean (SD) |      | 14        | 11.59 (7.47)   | 16.75 (7.52)   | 10.04 (6.77)   | **0.001** |
 
-*One subject did not complete the intake form, so some of the categorical variables will be 1 short of N=101.*
+**One subject did not complete the intake form, so some of the categorical variables will be 1 short of N=101.*
 
 ---
 
@@ -147,32 +147,33 @@ HRm = Heart rate max, calculated as 220bpm minus the participant's age (i.e., 20
 | Diziness handicap score          | -0.19                          | 0.07          | 
 | Neck disability index            | -0.23                          | **0.03**      | 
 
-*Interpretation:* HRt after exercise testing was significantly associated with age (Rho: -0.27, p=0.008) and PCSI score (Rho: -0.20, p=0.04), such that as age and PCSI score increase, HRt is expected to decrease. No other participant factors were associated with HRt, including sex (median diff: 0.5bpm, p=0.47), concussion history (median diff: 1.3bpm, p=0.93), and whether or not the participant had already begun physical activity at the time of testing (median diff: 4.1bpm, p=0.73).
+*Interpretation:* HRt after exercise testing was significantly associated with age (Rho: -0.27, p=0.008), PCSI score (Rho: -0.20, p=0.04), HADS depression score (Rho: -0.25, p=0.01), and Neck Disability Index score (Rho: -0.23, p=0.03). As these factors increase, HRt is expected to decrease. No other participant factors were associated with HRt, including sex (median diff: 0.5bpm, p=0.47), concussion history (median diff: 1.3bpm, p=0.93), and whether or not the participant had already begun physical activity at the time of testing (median diff: 4.1bpm, p=0.73). <--- If you have other categorical variables that might be interesting to describe alongside these, let me know so I can give you the median difference and p-values. 
 
 ---
 
 ## HRm accuracy metrics:
-The objective of the HRm method is to approximate the HRt that would have been achieved on the exercise test for those patients where exercise testing is no available. We can evalute the accuracy of existing HRm methods among participants who did complete the bike test in order to see if the HRm that would have been prescribe acurately represents the actual HRt for that participant. The established HRm recomendation is to have participants begin at-home exercise at 50% of HRm, and to increase by 5% of HRm each day that exercise is tollerated, up to a maximum of 80% HRm. At each level, it is common practice to add 5bpm to each side to create a target range. This is shown the figure below.
+The objective of the HRm-based method is to approximate the target heart rate (HRt) a patient would have reached during an exercise test, particularly for those unable to complete such testing. To evaluate the accuracy of this approach, we can compare the HRm-based prescriptions to the actual HRt values observed in participants who completed the bike test. The standard HRm recommendation is to begin at-home exercise at 50% of HRm, increasing by 5% each day that exercise is tolerated, up to a maximum of 80%HRm. At each level, it is common practice to create a target heart rate range by adding +/-5 beats per minute (bpm) to the prescribed value. This is shown in the figure below.
 
-**Figure B (not for text, just for fun):** 50% of HRm plotted for every subject in our dataset. HRm is defined as 220bpm minus the participants age. The x-axis represents every subject in the dataset, sorted from lowest to highest HRm. The oldest and youngest participants in the dataset have been labeled. 
+**Figure B (not for text, just for fun):** 50% of HRm plotted for every subject in our dataset. HRm is defined as 220bpm minus the participant's age. The x-axis represents every subject in the dataset, sorted from lowest to highest HRm. The oldest and youngest participants in the dataset have been labeled. 
 <img src="figs/HRm_plot_realData.png" alt="HRm mapping" width="1000">  
-**Make note of the y-axis here. All the HRm recomendations at 50% of HRm are between 101 and 104bpm.**
+**Make note of the y-axis here. All the HRm recommendations at 50%HRm are between 101 and 104 bpm.**
 
-However, when we plot this same 50% HRm approach alongside the actual HRt that participants obtained from the exercise test, what we see is that the 50% HRm approach is incredibly conservative in its estimations. HRm is defined as 220bpm minus the participants age. The x-axis represents every subject in the dataset, sorted from lowest to highest HRm. Shown in the figure below. 
+However, when we plot this same 50%HRm approach alongside the actual HRt values obtained from the exercise test, we see that the 50%HRm approach is incredibly conservative in its estimations. This is shown in the figure below.
 
-**Figure C (not for text):** 50% of HRm for each subject plotted against the HRt achieved by participants after undergoing exercise testing. The x-axis represents every subject in the dataset, sorted from lowest to highest HRm. The oldest and youngest participants in the dataset have been labeled, and their actual HRt values have been circled in red. 
+**Figure C (not for text):** 50%HRm for each subject plotted against the HRt achieved by participants after undergoing exercise testing. The x-axis represents every subject in the dataset, sorted from lowest to highest HRm. The oldest and youngest participants in the dataset have been labeled, and their actual HRt values have been circled in red. 
 <img src="figs/Figure2_annotated.png" alt="HRm mapped over HRt" width="1000">  
 
 
-And here is the actual figure to put in the manuscript: 
+Here is the actual figure to put in the manuscript: 
 
 **Figure 2:** 50% of HRm for each subject plotted against the HRt achieved by participants after undergoing exercise testing. 
 <img src="figs/Figure2.png" alt="HRm mapped over HRt" width="1000">  
-*Interpretation:* The 50% HRm approach substantially under-predicts the actual heart rate that can be tollerated by participants after concussion. Capture rate is defined as the percentage of HRt values that fall within the range of +/-5bpm of the predicted value (i.e., the shaded region in the figure). The **capture rate** achieved by the 50% HRm method, when including a +/- 5bpm interval, was 0.00% (lol). The **Root Mean Square Error** was 54.4bpm and the **Absolute Mean Error** was 52.1bpm. What are RMSE and AME? AME is the difference between a subjects predicted value (50% HRm) and their actual value (HRt). An AME of 52.1bpm means that, on average, the 50% HRm method is wrong by 52bpm. Thats massive. RMSE is the exact same concept, except we take the AME for each subject, square it, take the average across all subject, then square root that. <- if this does not make sense to you, that is okay. Just think of AME as being the average "incorrectness" of the 50% HRm method, and think of RMSE as the exact same thing, except it punishes more for very high incorrectness (such as when the HRm method is REALLY far off the HRt). Lower values for AME and RMSE means the method is more accurate. Our super high values mean that the 50% HRm method is pretty far off. And the figure shows that visually. 
 
-The 50% HRm method includes a caveat that the patient should start at 50% HRm, but increase heart rate by 5% of HRm each day that exercise is tollerated until reaching 80% HRm. Another way to think about error in this case is to calculate the number of days it would take, if participants continued increasing by 5% each day as is suggested, before they finally get to a heart rate that matches their HRt. In other words, when increasing that shaded region in the figure by 5% each day, how many days will it take on average before that shaded region captures the participants actual HRt. **Days needed to capture: 6.08 days.** This means if I provided a participant with this 50% HRm prescription and told them to increase by 5% each day that symptoms were tollerated, then it would take on average 6.08 days of exercise before that participant reached the HRt that I could have provided on day 1 if I just did the exercise test. <- if this doesnt make sense, lmk. 
+*Interpretation:* The 50%HRm approach substantially underestimates the actual heart rate that participants can tolerate after a concussion. To evaluate its accuracy, we defined a capture rate as the percentage of observed HRt values that fall within ±5 bpm of the predicted value - represented by the shaded region in the figure. The capture rate using the 50%HRm method was 0.000% (lol). The Root Mean Square Error (RMSE) was 54.4 bpm, and the Mean Absolute Error (MAE) was 52.1 bpm. MAE is the average difference between the predicted value (50%HRm) and the actual observed value (HRt). An MAE of 52.1 bpm means that, on average, the prediction was off by 52 bpm - pretty gnarly. RMSE is similar to MAE but penalizes larger errors more heavily. In both RMSE and MAE, lower values indicate better accuracy. So, the high MAE and RMSE values here tell us that the 50%HRm method performs poorly. You can see this in the figure; the predicted values never align with actual HRt values.
 
-capture rate: 0%  
+The 50%HRm method also comes with a progression component. Patients are to begin exercise at 50%HRm and increase by 5% of HRm each day that exercise is tolerated, up to a maximum of 80% HRm. Another way to think about error is to ask: if I gave a participant a 50%HRm prescription and told them to increase daily by 5% as symptoms allow, how many days would it take for a participant to reach their actual HRt if they followed this progression exactly? In other words, starting at 50% HRm and increasing by 5% each day, how long until their prescribed heart rate finally overlaps with the true HRt determined by an exercise test (i.e., when the shaded prediction range in the figure finally captures their actual value)? The answer to this question is a value I am calling "Days needed to capture". **On average, when starting at 50%HRm, it would take participants 6.08 days of incrementally increasing exercise before they reach the heart rate that we could have identified for them immediately with an exercise test (i.e., their HRt).**
+
+Capture rate: 0%  
 RMSE: 54.4  
 AME: 52.1  
 Days needed to capture: 6.08 days  
