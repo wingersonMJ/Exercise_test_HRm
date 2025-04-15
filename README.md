@@ -327,6 +327,7 @@ To complete when we have agreed on an approach...
 ---
 
 # Prediction Calculator 
-
+**Not medical advice** Please do not sue me... I am judgement proof anyway ;)  
+https://wingersonmj.github.io/Exercise_test_HRm/
 
 --- 
