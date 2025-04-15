@@ -236,14 +236,18 @@ We identified earlier that HRt is univariably associated with only a few factors
 | NDI score | 1.56 | 
 | HADS depres | 1.55 | 
 
+After developing the prediction model, we get an equation that shows how each factor affects the target heart rate. We also can evaluate performance metrics in the same way as above. RMSE and AME are 13.9bpm and 10.9bpm respectively. So slightly more accurate with this approach. Adjusted R2 is a measure of how well our model captures the variations in HRt. Typically something above 0.20 (or 20%) is a good value. Our adjusted R2 is 0.09, which means this prediction model is only explaining 9% of the variance in HRt. Not supper great, but this really only means that there are lots of other factors that we have not measured that affect HRt, so more research to be done! 
+
 RMSE: 13.98  
-AME: 10.9 
-Adj R2: 0.09
+AME: 10.9  
+Adj R2: 0.09  
 
-Model Equation:  
-HRt = 185.83761756665606 + (-0.063 * pcsi_total_current) + (-1.879 * age_visit) + (0.473 * doi_to_v1) + (-0.209 * ndi_score) + (-0.646 * hads_depress_subscore)  
+**Model Equation:**  
+HRt = (185.838 * const) + (-0.063 * pcsi_total_current) + (-1.879 * age_visit) + (0.473 * doi_to_v1) + (-0.209 * ndi_score) + (-0.646 * hads_depress_subscore)
 
-Model Equation Simplified:  
+
+**Model Equation Simplified:**  
+
 HRt =
 - 186bpm as a starting place
   - subtract 0.06 x PCSI score... so kids who are more symptomatic will have a lower predicted HRt
@@ -253,18 +257,65 @@ HRt =
   - subtract 0.6 x HADS depression score... so those with more depression symptoms will have a lower HRt
 
 
+## Model summary:
+No need to include in text. Just showing here. **Intercept must be significant for us to get any sort of valid predictions.**
+| Variable | Coef's are above in model equation | P-value |
+| -------- | ---------------------------------- | ------- | 
+| Intercept | | <0.001 | 
+| PCSI | | 0.50 | 
+| Age | | 0.097 | 
+| Time to visit | | 0.182 | 
+| NDI score | | 0.427 | 
+| HADS depression score | | 0.271 | 
+
+
+## Visualize! 
+**Figure E:** Prediction model plotted alongside the actual bike test HRt values. 
+<img src="figs/Prediction_model.png" alt="prediction model" width="1000">  
+*Interpretation:* The prediction model is "bouncing around", which may see like a bad thing. But this is actually a very good thing, because it shows that our prediction model is trying to more accurately capture the unique factors (age, symptoms, etc.) for each participant which makes everyone's HRt values so different. It also gives us a much wider range of predictions, from ~165bpm down to ~140bpm. So not everyone is getting the exact same prescription! Yahoo for personalized medicine! 
+
+--- 
+
+## Confidence Intervals:
+There are two approaches that we can use for confidence intervals (CI). We could calculate the CI based on inferencing the population mean. Or we could calculate the CI based on the observed error in individual predictions. These sound the same, but here is the difference:
+
+**CI's based on model coefficients:**
+- How to calculate:
+  - Variance of residuals = SUM(y_true - Y_pred)^2 / (n - number of predictors) ---> this gives us a measure of uncertainty in our predictions
+  - Variance for each coefficent then = variance of residuals * covariance of predictors ---> this tells us how much uncertainty in the outcome is based on the predictors spread and correlation with other predictors 
+  - Take the square root of the variance of each coefficient to get the standard error of the coefficient
+  - The SE then is used to calculate a 95% or 99% CI by multiplying with a t-critical value
+- Given this persons values for age, symptoms, ect., what is the mean and CI that we would expect for HRt. This is like making a population-level inference: among similar subjects, this is what we would expect...
+
+**Figure F:** Prediction model plotted alongside the actual bike test HRt values, with 95% Confidence Interval Included.  
+<img src="figs/Prediction_model_95CImean.png" alt="prediction model and 95% CI" width="1000">  
+
+
+**CI's based on prediction intervals:***
+- Given this subjects values, what is a range of values within which we would expect them to fall given that individual variability can be large?
+- In other words, when estimating the true value of the population mean above, we can get a smaller confidence interval because we expect the population mean to refelct our sample means pretty well.
+  - But when calculating an individual participant's value and CI, we are less certain because individuals can varry a lot! So we add an addition error term, which just inflates our level of uncertainty.
+- Calculation is exactly the same except:
+  - A +1 is included in the calculation for the variance of coefficients
+  - Why? This accounts for inherent randomness among individuals
+ - I am using an 80% CI here because if I did the 95% CI it would be too large of a range to be useful...
+
+**Figure G:** Prediction model plotted alongside the actual bike test HRt values, with 95% Confidence Interval Included.  
+<img src="figs/Prediction_model_80CIobservation.png" alt="prediction model and 80% CI for the individual prediction" width="1000">  
+
+
+
+
+**Why not bootstrap for CI's:**
 
 
 
 
 
 
+Prediction 99% CI: 50.6%
 
-
-
-Prediction 99% CI: 47%
-
-Prediction and 80% CI for individual observations: 83%
+Prediction and 82.8% CI for individual observations: 
 
 --- 
 
@@ -277,3 +328,8 @@ Prediction and 80% CI for individual observations: 83%
 
 
 ---
+
+# Prediction Calculator 
+
+
+--- 
