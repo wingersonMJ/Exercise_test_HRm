@@ -33,31 +33,30 @@ Last, though exercise testing is ideal for developing personalized HRt prescript
 
 # Methods
 
-## Exercise testing
+## Exercise testing:
 The graded YMCA protocol. 
 
-## HRm Method
+## HRm Method:
 50% of HRm
 
-HRt = 
-HRm = 
-
+HRt = Heart rate target, 90% of the highest heart rate achieved on exercise testing.
+HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205bpm if age == 15years).
 
 ---
 
 # Findings and Figures
 
-## Exercise test performance
+## Exercise test performance:
 
-## Factors associated with stop criteria 
+## Factors associated with stop criteria:
 
-## Factors associated with exercise test HRt
+## Factors associated with exercise test HRt:
 
-## HRm performance metrics 
+## HRm performance metrics:
 
-## Optimal HRm methods
+## Optimal HRm methods:
 
-## Personalized prescription in the absence of exercise testing
+## Personalized prescription in the absence of exercise testing:
 
 
 
