@@ -38,7 +38,7 @@ The graded YMCA protocol is described in our past exercise RCT [[ref](https://pu
 For the purposes of analysis, we grouped participants as having symptom exacerbation during the test vs reaching exhaustion/completing the protocol. 
 
 ## HRm Method:
-Though exercise testing is ideal for developing personalized HRt prescriptions for adolescents after concussion, exercise testing can be burdensome (time, resource, and expertise demands). Therefore, past research has established alternative methods for generating heart rate prescriptions for patients in the abscense of exercise testing [[ref](https://pubmed.ncbi.nlm.nih.gov/32058454/)]. 
+Though exercise testing is ideal for developing personalized HRt prescriptions for adolescents after concussion, exercise testing can be burdensome (time, resource, and expertise demands). Therefore, past research has established alternative methods for generating heart rate prescriptions for patients in the abscense of exercise testing [[ref](https://pubmed.ncbi.nlm.nih.gov/32058454/)]. One approach established in previous work is to prescribe a portion of the patients age-predicted maximum heart rate (HRm). It has been suggested that 50% of HRm is recommended for patients as a starting point for exercise, progressing by +5% every day as symptoms allow up to a maximum of 80% HRm. 
 
 **Definitions:**
 HRt = Heart rate target, 90% of the highest heart rate achieved on exercise testing.
@@ -63,7 +63,30 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 <img src="figs/Figure1.png" alt="exercise test performance" width="1000">  
 *Interpretation:* No significant differences in the heart rate achieved during the test, or in the progression of heart rate throughout the test, between those who stopped due to symptoms and those who reached exhaustion or completed the protocol. 
 
+**Table A (can probably just describe this in the results, don't need to include this table):** Performance on the exercise test. 
+|                                  |      | Missing   | Overall        | Range       |
+|----------------------------------|------|-----------|----------------|-------------|
+| n                                |      |           | 101            |             |
+| branch_used, n (%)               | Easy |           | 78 (77.23)     |             |
+|                                  |Medium|           | 18 (17.82)     |             |
+|                                  | Hard |           | 3 (2.97)       |             |
+| Fatigue, n (%)                   | 1    |           | 11 (10.89)     |             |
+| Pain, n (%)                      | 1    |           | 1 (0.99)       |             |
+| Diziness, n (%)                  | 1    |           | 22 (21.78)     |             |
+| Headache, n (%)                  | 1    |           | 42 (41.58)     |             |
+| Nausea, n (%)                    | 1    |           | 8 (7.92)       |             |
+| highest_hr_achieved, mean (SD)   |      | 0         | 171.32 (17.57) |             |
+| highest_rpe_achieved, mean (SD)  |      | 0         | 15.50 (2.32)   |             |
+| highest_rpm_achieved, mean (SD)  |      | 1         | 73.05 (6.25)   |             |
+| highest_vas_achieved, mean (SD)  |      | 1         | 3.76 (2.15)    |             |
+| hr_baseline, mean (SD)           |      | 2         | 82.74 (12.02)  |             |
+| vas_baseline, mean (SD)          |      | 2         | 1.98 (1.65)    |             |
+
+
+
 ## Factors associated with stop criteria:
+
+
 
 ## Factors associated with exercise test HRt:
 
