@@ -23,20 +23,21 @@
 
 <h2>HRt = 185.8 + (-0.06*PCSI score) + (-1.88*Age) + (0.47*time since injury) + (-0.21*Neck Disability Index) + (-0.65*HADS depression score)</h2>
 
-<label for="pcsi">PCSI score:</label>
-<input type="number" id="pcsi" step="any">
+<label for="pcsi">PCSI score (3-114):</label>
+<input type="number" id="pcsi" step="1" min="3" max="114">
 
-<label for="age">Age:</label>
-<input type="number" id="age" step="any">
+<label for="age">Age (13–18):</label>
+<input type="number" id="age" step="1" min="13" max="18">
 
-<label for="time">Time since injury (days):</label>
-<input type="number" id="time" step="any">
+<label for="time">Time since injury (days, 4-21):</label>
+<input type="number" id="time" step="1" min="4" max="21">
 
-<label for="ndi">Neck Disability Index:</label>
-<input type="number" id="ndi" step="any">
+<label for="ndi">Neck Disability Index (0-32):</label>
+<input type="number" id="ndi" step="1" min="0" max="32">
 
-<label for="hads">HADS Depression Score:</label>
-<input type="number" id="hads" step="any">
+<label for="hads">HADS Depression Score (0–12):</label>
+<input type="number" id="hads" step="1" min="0" max="12">
+
 
 <button onclick="calculateHRt()">Calculate HRt</button>
 
@@ -51,7 +52,12 @@
         const hads = parseFloat(document.getElementById("hads").value);
 
         if ([pcsi, age, time, ndi, hads].some(isNaN)) {
-            document.getElementById("result").textContent = "Please fill in all fields with valid numbers.";
+            document.getElementById("result").textContent = "Oops! You forgot to add a value above.";
+            return;
+        }
+
+        if (pcsi < 3 || pcsi > 114 || age < 13 || age > 18 || time < 4 || time > 21 || ndi < 0 || ndi > 32 || hads < 0 || hads > 12) {
+            document.getElementById("result").textContent = "A value you entered above is outside of the range of our prediction model. A prediction for this person may not be accurate.";
             return;
         }
 
