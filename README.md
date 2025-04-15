@@ -187,12 +187,26 @@ Days needed to capture: 6.08 days
 ---
 
 ## Optimal HRm methods:
+So the natural next question then is, if 50% of HRm is way too low, what percent of HRm would be better aligned with the actual HRt obtained from exercise testing? 
 
+We can actually test that in a very simple way. We can start at 40% of HRm and calculate RMSE (same as above, how far off is that compared to HRt). Then we can do the same thing for 41% of HRm... and continue on with 1% changes in HRm from 40% all the way to something like 90%. Eventually, we will get to a percentage of HRm that better predicts the HRt. And if we go too high on our percentage of HRm, our RMSE values will start to go up again. That is shown in the figure below. 
 
+**Figure 3:*** Root Mean Square Error (RMSE) representing the error between %HRm and actual HRt values. The y-axis is RMSE. The x-axis is percentages of HRm that could be used to derive a heart rate prescription, from 40% of HRm to 90% of HRm. A light grey vertical line represents 50% HRm, the currently established %HRm for clinical practice. A dark grey vertical line represents the %HRm with the lowest error.  
+<img src="figs/Figure3.png" alt="HRm vs RMSE" width="1000">  
+*Interpretation:* When we prescribe 50% of HRm, our error is quite high - approximately 50-ish bpm in RMSE. However, when we prescribe a higher percent of HRm, our error decreases, but only up to about ~75% of HRm. Above that and we are over-predicting heart rate, so our error starts to increase again. So an optimal percent of HRm is 76%. 
 
-capture rate: 27.0%
-RMSE: 15.6
-AME: 12.1
+So an HRm of 76% is a better starting place than 50% HRm. We can actually visualize this as well: 
+
+**Figure 4:** 76% of HRm for each subject plotted against the HRt achieved by participants after undergoing exercise testing. 
+<img src="figs/Figure4.png" alt="HRm mapped over HRt" width="1000">  
+*Interpretation:* Though over-predicting heart rate for some subjects, using 76% of HRm is a better starting target than beginning at 50% of HRm. The capture rate for 76%HRm is 27.0%, improved from 0% when using 50%HRm. The RMSE and AME are 15.6bpm and 12.1bpm, respectively, improved from the 50%HRm method which had an RMSE of 54.4 and an AME of 52.1. 
+
+Days to capture can also be calculated for this approach. If we assume that a subject would go up or down by 5% of HRm based on symptom tollerance, similar to the approach used above, then the average time to capture is 2.13 days. In other words, if we over- or under-shoot on heart rate using the higher 76%HRm approach, by simply adjusting by 5% of HRm up or down, the subject would be in the correct heart rate zone on their second day of at-home exercise. Compare this to the 50% HRm method that would get participants into the correct zone only by day 6 of at-home exercise, nearly a week after they met with their doctor. 
+
+capture rate: 27.0%  
+RMSE: 15.6  
+AME: 12.1  
+Days to capture: 2.13  
 
 ## Personalized prescription in the absence of exercise testing:
 
