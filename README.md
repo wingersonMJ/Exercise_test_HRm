@@ -153,7 +153,23 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 
 *Interpretation:* HRt after exercise testing was significantly associated with age (Rho: -0.27, p=0.008) and PCSI score (Rho: -0.20, p=0.04), such that as age and PCSI score increase, HRt is expected to decrease. No other participant factors were associated with HRt, including sex (median diff: 0.5bpm, p=0.47), concussion history (median diff: 1.3bpm, p=0.93), and whether or not the participant had already begun physical activity at the time of testing (median diff: 4.1bpm, p=0.73).
 
-## HRm performance metrics:
+## HRm accuracy metrics:
+The objective of the HRm method is to approximate the HRt that would have been achieved on the exercise test for those patients where exercise testing is no available. We can evalute the accuracy of existing HRm methods among participants who did complete the bike test in order to see if the HRm that would have been prescribe acurately represents the actual HRt for that participant. The established HRm recomendation is to have participants begin at-home exercise at 50% of HRm, and to increase by 5% of HRm each day that exercise is tollerated, up to a maximum of 80% HRm. At each level, it is common practice to add 5bpm to each side to create a target range. This is shown the figure below.
+
+**Figure B (not for text, just for fun):** 50% of HRm plotted for every subject in our dataset. HRm is defined as 220bpm minus the participants age. The x-axis represents every subject in the dataset, sorted from lowest to highest HRm. The oldest and youngest participants in the dataset have been labeled. 
+<img src="figs/HRm_plot_realData.png" alt="HRm mapping" width="1000">  
+**Make note of the y-axis here. All the HRm recomendations at 50% of HRm are between 101 and 104bpm.**
+
+However, when we plot this same 50% HRm approach alongside the actual HRt that participants obtained from the exercise test, what we see is that the 50% HRm approach is incredibly conservative in its estimations. HRm is defined as 220bpm minus the participants age. The x-axis represents every subject in the dataset, sorted from lowest to highest HRm. Shown in the figure below. 
+
+**Figure C:** 50% of HRm for each subject plotted against the HRt achieved by participants after undergoing exercise testing. The x-axis represents every subject in the dataset, sorted from lowest to highest HRm. The oldest and youngest participants in the dataset have been labeled, and their actual HRt values have been circled in red. 
+<img src="figs/Figure2.png" alt="HRm mapped over HRt" width="1000">  
+
+
+And here is the actual figure to put in the manuscript: 
+
+**Figure 2:** 50% of HRm for each subject plotted against the HRt achieved by participants after undergoing exercise testing. 
+<img src="figs/Figure2.png" alt="HRm mapped over HRt" width="1000">  
 
 
 ## Optimal HRm methods:
