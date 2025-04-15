@@ -75,13 +75,11 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 | Diziness, n (%)                  | 1    |           | 22 (21.78)     |             |
 | Headache, n (%)                  | 1    |           | 42 (41.58)     |             |
 | Nausea, n (%)                    | 1    |           | 8 (7.92)       |             |
-| highest_hr_achieved, mean (SD)   |      | 0         | 171.32 (17.57) |             |
-| highest_rpe_achieved, mean (SD)  |      | 0         | 15.50 (2.32)   |             |
-| highest_rpm_achieved, mean (SD)  |      | 1         | 73.05 (6.25)   |             |
-| highest_vas_achieved, mean (SD)  |      | 1         | 3.76 (2.15)    |             |
-| hr_baseline, mean (SD)           |      | 2         | 82.74 (12.02)  |             |
-| vas_baseline, mean (SD)          |      | 2         | 1.98 (1.65)    |             |
-
+| hr_baseline, mean (SD)           |      | 2         | 82.74 (12.02)  | 59.0, 111.0 |
+| highest_hr_achieved, mean (SD)   |      | 0         | 171.32 (17.57) | 120, 202    |
+| vas_baseline, mean (SD)          |      | 2         | 1.98 (1.65)    | 0.0, 6.4    |
+| highest_vas_achieved, mean (SD)  |      | 1         | 3.76 (2.15)    | 0.0, 9.1    |
+| highest_rpe_achieved, mean (SD)  |      | 0         | 15.50 (2.32)   | 8, 19       |
 
 
 ## Factors associated with stop criteria:
