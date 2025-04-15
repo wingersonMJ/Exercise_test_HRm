@@ -208,6 +208,16 @@ RMSE: 15.6
 AME: 12.1  
 Days to capture: 2.13  
 
+**Figure D (include in text if you want, but not necessary):** Residuals comparing the actual HRt and the predicting heart rate derived from 50%HRm and 75%HRm methods.
+<img src="figs/Residuals.png" alt="Residuals" width="1000">  
+
+--- 
+
+**To me, the information above is plenty for a manuscript.**  
+
+**However, you know I can't resist a prediction model...*** 
+
+---
 ## Personalized prescription in the absence of exercise testing:
 
 
