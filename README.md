@@ -47,6 +47,16 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 
 # Findings and Figures
 
+## Pre-processing:
+**Figure A (not for text):** Kernel density plot showing the distribution of the highest heart rate achieved on the exercise test in our sample. N=105
+<img src="figs/pre-processing_kernelDensity.png" alt="KD pre-processing" width="1000">  
+*Interpretation:* A majority of subjects reached a heart rate of between 150bpm and 200bpm during the test. Almost no one went above 200bpm and a smaller portion of the sample was between 100 and 150bpm. 
+**Important on this plot is the small 'bump' at ~75bpm. N=4 subjects had a highest achieved heart rate of between 72 and 90bpm. These values are closer to what we would expect for a resting heart rate, not an ending heart rate. These points likely reflect an error in the data. Therefore, they were removed from the analysis.**
+
+**Figure B (not for text):** Kernel density plot showing the distribution of the highest heart rate achieved on the exercise test in our sample. N=101
+<img src="figs/post-processing_kernelDensity.png" alt="KD post-processing" width="1000">  
+*Interpretation:* This is the same density plot as above, but with the N=4 outlier subjects removed. 
+
 ## Exercise test performance:
 **Figure 1:** Changes in heart rate, symptoms (visual analog scale), and rating of percieved exertion throughout the exercise test. Mean values at each minute were calculated and plot for those who stopped due to symptom exacerbation vs those who reached exhaustion or completed the protocol. 
 <img src="figs/Figure1.png" alt="exercise test performance" width="1000">  
