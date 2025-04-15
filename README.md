@@ -23,7 +23,11 @@ Last, though exercise testing is ideal for developing personalized HRt prescript
 
 
 ## Objective:
-1. 
+1. To compare demographics, injury, and clinical characteristics among participants with concussion based on exercise test stop criteria: symptom exacerbation vs exhaustion.
+
+2. To determine if demographics, injury, or clinical characteristics are associated with the maximum achieved heart rate on the exercise test.
+
+3. To evaluate the accuracy of a 50% HRm method for prescirbing a HRt compared to the HRt derived from exercise testing. 
 
 ---
 
