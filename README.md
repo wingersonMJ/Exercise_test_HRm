@@ -33,7 +33,36 @@ Last, though exercise testing is ideal for developing personalized HRt prescript
 
 # Methods
 
+## Exercise testing
+The graded YMCA protocol. 
+
+## HRm Method
+50% of HRm
+
+HRt = 
+HRm = 
 
 
+---
+
+# Findings and Figures
+
+## Exercise test performance
+
+## Factors associated with stop criteria 
+
+## Factors associated with exercise test HRt
+
+## HRm performance metrics 
+
+## Optimal HRm methods
+
+## Personalized prescription in the absence of exercise testing
+
+
+
+
+
+--- 
 
 # Key take-aways
