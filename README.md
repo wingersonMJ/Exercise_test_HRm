@@ -53,7 +53,7 @@ HRm = Heart rate max, calculated as 220bpm minus the participants age (i.e., 205
 
 
 
-*Interpretation:* No significant differences in the heart rate achieved during the test, or in the progression 
+*Interpretation:* No significant differences in the heart rate achieved during the test, or in the progression of heart rate throughout the test, between those who 
 
 ## Factors associated with stop criteria:
 
