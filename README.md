@@ -181,21 +181,21 @@ Days needed to capture: 6.08 days
 ---
 
 ## Optimal HRm methods:
-So the natural next question then is, if 50% of HRm is way too low, what percent of HRm would be better aligned with the actual HRt obtained from exercise testing? 
+With this established, the natural next question is, what percent of HRm would be better aligned with the HRt obtained from exercise testing? 
 
-We can actually test that in a very simple way. We can start at 40% of HRm and calculate RMSE (same as above, how far off is that compared to HRt). Then we can do the same thing for 41% of HRm... and continue on with 1% changes in HRm from 40% all the way to something like 90%. Eventually, we will get to a percentage of HRm that better predicts the HRt. And if we go too high on our percentage of HRm, our RMSE values will start to go up again. That is shown in the figure below. 
+We can test that! Starting at 40%HRm, we calculate RMSE (same as above, tells us how far off that estimate is from the actual HRt). Then we can do the same thing for 41% of HRm... and continue on with 1% changes up to 90%HRm. Eventually, we will get to a percentage of HRm that better predicts the HRt. And if we go too high on our percentage of HRm, our RMSE values will start to go up again. That is shown in the figure below. 
 
-**Figure 3:*** Root Mean Square Error (RMSE) representing the error between %HRm and actual HRt values. The y-axis is RMSE. The x-axis is percentages of HRm that could be used to derive a heart rate prescription, from 40% of HRm to 90% of HRm. A light grey vertical line represents 50% HRm, the currently established %HRm for clinical practice. A dark grey vertical line represents the %HRm with the lowest error.  
+**Figure 3:*** Root Mean Square Error (RMSE) representing the difference between heart rates derived from varying percentages of HRm and the actual HRt values. The y-axis shows RMSE - prediction error. The x-axis represents different percentages of HRm, ranging from 40% to 90%, used to estimate HRt. A light grey vertical line marks 50% HRm, the currently recommended clinical starting point. A dark grey vertical line highlights the optimal %HRm, which produced the lowest RMSE, indicating the most accurate prediction of HRt.
 <img src="figs/Figure3.png" alt="HRm vs RMSE" width="1000">  
-*Interpretation:* When we prescribe 50% of HRm, our error is quite high - approximately 50-ish bpm in RMSE. However, when we prescribe a higher percent of HRm, our error decreases, but only up to about ~75% of HRm. Above that and we are over-predicting heart rate, so our error starts to increase again. So an optimal percent of HRm is 76%. 
+*Interpretation:* A prescription of 50%HRm generates predictions with substantial error compared to actual HRt values. Prescribing a higher percent of HRm decreases error, but only up to about 75% of HRm. Above that, and we are over-predicting heart rate, so our error starts to increase again.  
 
-So an HRm of 76% is a better starting place than 50% HRm. We can actually visualize this as well: 
+Therefore, 76%HRm is a better predictor of HRt than 50%HRm. We can visualize this as well: 
 
 **Figure 4:** 76% of HRm for each subject plotted against the HRt achieved by participants after undergoing exercise testing. 
 <img src="figs/Figure4.png" alt="HRm mapped over HRt" width="1000">  
-*Interpretation:* Though over-predicting heart rate for some subjects, using 76% of HRm is a better starting target than beginning at 50% of HRm. The capture rate for 76%HRm is 27.0%, improved from 0% when using 50%HRm. The RMSE and AME are 15.6bpm and 12.1bpm, respectively, improved from the 50%HRm method which had an RMSE of 54.4 and an AME of 52.1. 
+*Interpretation:* Though over-predicting heart rate for some subjects, using 76%HRm is a better predictor of HRt than 50%HRm. The capture rate for 76%HRm is 27.0%, improved from 0% when using 50%HRm. The RMSE and MAE are 15.6 bpm and 12.1 bpm, respectively, improved from the 50%HRm method, which had an RMSE of 54.4 bpm and an MAE of 52.1 bpm. 
 
-Days to capture can also be calculated for this approach. If we assume that a subject would go up or down by 5% of HRm based on symptom tollerance, similar to the approach used above, then the average time to capture is 2.13 days. In other words, if we over- or under-shoot on heart rate using the higher 76%HRm approach, by simply adjusting by 5% of HRm up or down, the subject would be in the correct heart rate zone on their second day of at-home exercise. Compare this to the 50% HRm method that would get participants into the correct zone only by day 6 of at-home exercise, nearly a week after they met with their doctor. 
+Days to capture can also be estimated for 76%HRm. Assuming a patient adjusts their exercise intensity by +/-5% of HRm each day based on symptom tolerance - just as they would in the 50%HRm method - the average time to reach their actual HRt is 2.13 days. In other words, even if we slightly over- or under-estimate their HRt using the 76% HRm starting point, the patient would enter their correct heart rate zone by the second day of at-home exercise. This is a substantial improvement compared to the 50%HRm method, which wouldn’t guide participants into the correct zone until approximately day 6, almost a full week after their initial clinic visit.
 
 capture rate: 27.0%  
 RMSE: 15.6  
@@ -213,7 +213,7 @@ Days to capture: 2.13
 
 ---
 ## Personalized prescription in the absence of exercise testing:
-76%HRm as a prescription has less error, a better capture rate, and fewer days to capture compared to a 50%HRm recomendation. However, undergoing exercise testing and obtaining an actual HRt is still a 'gold standard' approach. Why? Because the exercise test is specific to each individual. Above we identified a number of measured characteristics that affect the HRt, such as intitial symptom severity, age, etc. There may also be unmeasured factors (confounders) that we don't know about, didn't measure, etc. that could also affect a persons HRt. So actually getting them on the exercise bike and deriving a HRt is the best approach. Even when using the 76%HRm method, the predicted heart rate only differs between subjects by about 2bpm. Which means everyone is essentially getting the exact same recomendation. This is not personalized medicine at all... 
+76%HRm as a prescription has less error, a better capture rate, and fewer days to capture compared to a 50%HRm recommendation. However, undergoing exercise testing and obtaining an actual HRt is still a 'gold standard' approach. Why? Because the exercise test is specific to each individual. Above we identified a number of measured characteristics that affect the HRt, such as intitial symptom severity, age, etc. There may also be unmeasured factors (confounders) that we don't know about, didn't measure, etc. that could also affect a persons HRt. So actually getting them on the exercise bike and deriving a HRt is the best approach. Even when using the 76%HRm method, the predicted heart rate only differs between subjects by about 2bpm. Which means everyone is essentially getting the exact same recomendation. This is not personalized medicine at all... 
 
 Sooooooo, the question is: can we take this existing HRm method and account for some other important participant characteristics? 
 
