@@ -273,7 +273,7 @@ No need to include in text. Just showing here. **Intercept must be significant f
 ## Confidence Intervals:
 There are two approaches we can use to calculate confidence intervals (CI). We can base the CI on inference about the population mean, or we can base it on the observed error in individual predictions. These may sound similar, but here’s the difference:
 
-**CIs based on model coefficients**
+**CIs based on model coefficients**  
 How to calculate:
 - Variance of residuals = SUM(y_true - y_pred)^2 / (n - number of predictors) ---> this gives us a measure of uncertainty in the predictions
 - Variance for each coefficient = variance of residuals × covariance of predictors ---> this reflects how much uncertainty in the outcome is due to predictor spread or multicollinearity
@@ -292,7 +292,7 @@ CI width: 14.6 bpm, range = 7.5, 33.4
 
 
 
-**CIs based on prediction intervals:***
+**CIs based on prediction intervals:**  
 Given this subject’s values, what is the range of values within which we expect their HRt to fall, accounting for individual variability?
 - In other words, when estimating the population mean (as in the previous section), we can use a narrow confidence interval because we assume the sample is a good reflection of the population.
   - But when estimating an individual’s true value, there is more uncertainty because individuals can vary a lot - even among those with similar characteristics.
