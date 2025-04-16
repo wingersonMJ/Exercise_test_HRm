@@ -213,16 +213,16 @@ Days to capture: 2.13
 
 ---
 ## Personalized prescription in the absence of exercise testing:
-76%HRm as a prescription has less error, a better capture rate, and fewer days to capture compared to a 50%HRm recommendation. However, undergoing exercise testing and obtaining an actual HRt is still a 'gold standard' approach. Why? Because the exercise test is specific to each individual. Above we identified a number of measured characteristics that affect the HRt, such as intitial symptom severity, age, etc. There may also be unmeasured factors (confounders) that we don't know about, didn't measure, etc. that could also affect a persons HRt. So actually getting them on the exercise bike and deriving a HRt is the best approach. Even when using the 76%HRm method, the predicted heart rate only differs between subjects by about 2bpm. Which means everyone is essentially getting the exact same recomendation. This is not personalized medicine at all... 
+76%HRm as a prescription has less error, a better capture rate, and fewer days to capture compared to a 50%HRm recommendation. However, undergoing exercise testing and obtaining an actual HRt is still a 'gold standard' approach. Why? Because the exercise test is specific to each individual. Above, we identified a number of measured characteristics that affect the HRt, such as initial symptom severity, age, etc. There may also be unmeasured factors (confounders) that we don't know about, didn't measure, etc., that could also affect a person's HRt. So, actually getting them on the exercise bike and deriving an HRt is the best approach. Even when using the 76%HRm method, the predicted heart rate only differs between subjects by about 2 bpm. This means everyone is essentially getting the same recommendation. This is not personalized medicine at all... 
 
-Sooooooo, the question is: can we take this existing HRm method and account for some other important participant characteristics? 
+Sooooooo, the question is: Can we take this existing HRm method and account for some other important participant characteristics? 
 
-We identified earlier that HRt is univariably associated with only a few factors: PCSI score, age, Neck Disability Index score, and HADS depression score. If we wanted to add one more factor to the model, we could adjust for time since injury even though it was not significant. Adding time since injury essentially controls for the ammount of 'recovery' that could've happened before the participant arrives in our lab for exercise testing. 
+We identified earlier that HRt is univariably associated with only a few factors: PCSI score, age, Neck Disability Index score, and HADS depression score. If we wanted to add one more factor to the model, we could adjust for time since injury, even though it was not significant. Adding time since injury essentially controls for the amount of 'recovery' that could've happened before the participant arrives in our lab for exercise testing. 
 
 **Results of personalize predictive model (N=83 due to missing data in predictors):***
 
-**Table E (not for text):** I was concerned about multicolinearity when including PCSI, time to visit, NDI and HADS depression subscores all in the same model. Often times these factors move together. However, VIF was low for all variables, so must not be an issue. No need to include this information in the manuscript; just showing David that I checked for VIF :)
-| Feature  | Varuance of Inflation Factor (VIF) |
+**Table E (not for text):** I was concerned about multicolinearity when including PCSI, time to visit, NDI and HADS depression subscores all in the same model. Oftentimes, these factors move together. However, VIF was low for all variables, so it must not be an issue. No need to include this information in the manuscript; I'm just showing David that I checked for VIF. :)
+| Feature  | Variance of Inflation Factor (VIF) |
 | -------- | ---------------------------------- |
 | PCSI Score | 1.92 |
 | Age | 1.06 | 
@@ -230,7 +230,7 @@ We identified earlier that HRt is univariably associated with only a few factors
 | NDI score | 1.56 | 
 | HADS depres | 1.55 | 
 
-After developing the prediction model, we get an equation that shows how each factor affects the target heart rate. We also can evaluate performance metrics in the same way as above. RMSE and AME are 13.9bpm and 10.9bpm respectively. So slightly more accurate with this approach. Adjusted R2 is a measure of how well our model captures the variations in HRt. Typically something above 0.20 (or 20%) is a good value. Our adjusted R2 is 0.09, which means this prediction model is only explaining 9% of the variance in HRt. Not supper great, but this really only means that there are lots of other factors that we have not measured that affect HRt, so more research to be done! 
+After developing the prediction model, we get an equation that shows how each factor affects the target heart rate. We can also evaluate performance metrics in the same way as above. RMSE and MAE are 13.9 bpm and 10.9 bpm, respectively. Adjusted R2 is a measure of how well our model captures the variations in HRt. Typically, something above 0.20 (or 20%) is a good value. Our adjusted R2 is 0.09, which means this prediction model is only explaining 9% of the variance in HRt. Not great, but this only means that there are lots of other factors that we have not measured that affect HRt, so more research to be done! 
 
 RMSE: 13.98  
 AME: 10.9  
@@ -247,7 +247,7 @@ HRt =
   - subtract 0.06 x PCSI score... so kids who are more symptomatic will have a lower predicted HRt
   - subtract 1.9 x age... so older kids will have a lower predicted HRt
   - add 0.5 x days since injury... so those further out from injury will have a higher HRt
-  - subtract 0.2 x Neck Disability Index score... so those with neck issue will have a lower HRt
+  - subtract 0.2 x Neck Disability Index score... so those with neck issues will have a lower HRt
   - subtract 0.6 x HADS depression score... so those with more depression symptoms will have a lower HRt
 
 
@@ -266,50 +266,51 @@ No need to include in text. Just showing here. **Intercept must be significant f
 ## Visualize! 
 **Figure E:** Prediction model plotted alongside the actual bike test HRt values. 
 <img src="figs/Prediction_model.png" alt="prediction model" width="1000">  
-*Interpretation:* The prediction model is "bouncing around", which may see like a bad thing. But this is actually a very good thing, because it shows that our prediction model is trying to more accurately capture the unique factors (age, symptoms, etc.) for each participant which makes everyone's HRt values so different. It also gives us a much wider range of predictions, from ~165bpm down to ~140bpm. So not everyone is getting the exact same prescription! Yahoo for personalized medicine! 
+*Interpretation:* The prediction model is "bouncing around", which may seem less than ideal. But this is very good because it shows that the model is capturing meaningful individual differences based on factors like age, symptoms, and other clinical variables. Rather than assigning the same heart rate prescription to everyone, the model produces a wide range of HRt predictions, from around 165 bpm down to 140 bpm. Yahoo for personalized medicine! 
 
 --- 
 
 ## Confidence Intervals:
-There are two approaches that we can use for confidence intervals (CI). We could calculate the CI based on inferencing the population mean. Or we could calculate the CI based on the observed error in individual predictions. These sound the same, but here is the difference:
+There are two approaches we can use to calculate confidence intervals (CI). We can base the CI on inference about the population mean, or we can base it on the observed error in individual predictions. These may sound similar, but here’s the difference:
 
-**CI's based on model coefficients:**
-- How to calculate:
-  - Variance of residuals = SUM(y_true - Y_pred)^2 / (n - number of predictors) ---> this gives us a measure of uncertainty in our predictions
-  - Variance for each coefficent then = variance of residuals * covariance of predictors ---> this tells us how much uncertainty in the outcome is based on the predictors spread and correlation with other predictors 
-  - Take the square root of the variance of each coefficient to get the standard error of the coefficient
-  - The SE then is used to calculate a 95% or 99% CI by multiplying with a t-critical value
-- Given this persons values for age, symptoms, ect., what is the mean and CI that we would expect for HRt. This is like making a population-level inference: among similar subjects, this is what we would expect...
+**CIs based on model coefficients**
+How to calculate:
+- Variance of residuals = SUM(y_true - y_pred)^2 / (n - number of predictors) ---> this gives us a measure of uncertainty in the predictions
+- Variance for each coefficient = variance of residuals × covariance of predictors ---> this reflects how much uncertainty in the outcome is due to predictor spread or multicollinearity
+- Take the square root of each coefficient's variance to get the standard error (SE)
+- The SE is then multiplied by a t-critical value to calculate a 95% CI
 
-**Figure F:** Prediction model plotted alongside the actual bike test HRt values, with 95% Confidence Interval Included.  
+Given this person’s values for age, symptoms, etc., what is the mean and CI we would expect for HRt?  
+This approach reflects a population-level inference: among people with similar characteristics, this is the range of expected HRt values.
+
+**Figure F:** Prediction model plotted alongside HRt values, with 95% Confidence Interval included.  
 <img src="figs/Prediction_model_95CImean.png" alt="prediction model and 95% CI" width="1000">  
-*Interpretation:* The capture rate for the 95% CI range is 50.6%. The average width of the confidence interval is 14.6bpm, with a range of 7.5 to 33.4bpm. So our capture rate of 50.6% is better than the 76%HRm method capture rate of 27%, and does so by only increase the prediction interval from 10bpm to an average of 14.6bpm.  
+*Interpretation:* The capture rate for the 95% CI range is 50.6%. The average width of the confidence interval is 14.6 bpm, with a range of 7.5 bpm to 33.4 bpm. Our capture rate of 50.6% is better than the 76%HRm method capture rate of 27% and does so by only increasing the prediction interval from 10 bpm to an average of 14.6 bpm.  
 
 Capture rate: 50.6%  
-CI width: 14.6bpm, range = 7.5, 33.4  
+CI width: 14.6 bpm, range = 7.5, 33.4  
 
 
-**CI's based on prediction intervals:***
-- Given this subjects values, what is a range of values within which we would expect them to fall given that individual variability can be large?
-- In other words, when estimating the true value of the population mean above, we can get a smaller confidence interval because we expect the population mean to refelct our sample means pretty well.
-  - But when calculating an individual participant's value and CI, we are less certain because individuals can varry a lot! So we add an addition error term, which just inflates our level of uncertainty.
-- Calculation is exactly the same except:
-  - A +1 is included in the calculation for the variance of coefficients
-  - Why? This accounts for inherent randomness among individuals
- - I am using an 80% CI here because if I did the 95% CI it would be too large of a range to be useful...
 
-**Figure G:** Prediction model plotted alongside the actual bike test HRt values, with 95% Confidence Interval Included.  
-<img src="figs/Prediction_model_80CIobservation.png" alt="prediction model and 80% CI for the individual prediction" width="1000">  
-*Interpretation:* The capture rate for an 80% CI range that is based on individual prediction (i.e., not population mean, so will be wider despite being less confident) is 82.8%. The average width of the confidence interval is 38.7bpm, with a range of 37.7 to 43.2bpm. So our capture rate of is higher than the CI interval above, but the interval range is substantially larger.   
+**CIs based on prediction intervals:***
+Given this subject’s values, what is the range of values within which we expect their HRt to fall, accounting for individual variability?
+- In other words, when estimating the population mean (as in the previous section), we can use a narrow confidence interval because we assume the sample is a good reflection of the population.
+  - But when estimating an individual’s true value, there is more uncertainty because individuals can vary a lot - even among those with similar characteristics.
+- So, we include an additional error term, which increases the width of the confidence interval to account for this variability.
+
+The calculation is nearly the same as for the population-based CI, except:
+- A +1 is added in the formula for the variance of the prediction
+- Why? This extra term accounts for randomness at the individual level that can't be explained by the model
+- I'm using an 80% CI here instead of a 95% CI because a higher level of confidence would give us such a wide interval that it becomes not clinically useful.
+  - And I think we can use the term prediction interval (PI) instead to describe this. 
+
+
+**Figure G:** Prediction model plotted alongside HRt values, with 80% Prediction Interval included.  
+<img src="figs/Prediction_model_80CIobservation.png" alt="prediction model and 80% PI for the individual prediction" width="1000">  
+*Interpretation:* The capture rate for an 80% PI (i.e., not population mean, so it will be wider despite being less confident) is 82.8%. The average width of the confidence interval is 38.7 bpm, with a range of 37.7 to 43.2 bpm. So our capture rate is higher than above, but the interval range is substantially larger.   
 
 Capture rate: 82.8%  
-CI width: 38.7bpm, range =  37.7, 43.2  
-
---- 
-
-# Key take-aways
-
-To complete when we have agreed on an approach...
+PI width: 38.7 bpm, range = 37.7, 43.2  
 
 ---
 
@@ -321,7 +322,8 @@ To complete when we have agreed on an approach...
 ---
 
 # Prediction Calculator 
-**Not medical advice** Please do not sue me... I am judgement proof anyway ;)  
+**Not medical advice** Please do not sue me... I am judgment-proof anyway. ;)  
+
 https://wingersonmj.github.io/Exercise_test_HRm/
 
 --- 
