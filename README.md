@@ -40,9 +40,9 @@ For objective #1, we grouped participants as experiencing symptom exacerbation d
 ## HRm Method:
 Past research has established alternative methods for generating heart rate prescriptions in the absence of exercise testing [[ref](https://pubmed.ncbi.nlm.nih.gov/32058454/)]. One approach established in previous work is to prescribe a portion of the patient's age-predicted maximum heart rate (HRm). Specifically, patients might begin exercising at 50% of their HRm, with daily increases of 5% as tolerated, up to a maximum of 80%HRm.
 
-**Definitions**
-HRt = Heart rate target, 90% of the highest heart rate achieved on exercise testing.
-HRm = Heart rate max, calculated as 220bpm minus the participant's age (i.e., 205bpm if age == 15years).
+**Definitions**  
+HRt = Heart rate target, 90% of the highest heart rate achieved on exercise testing.  
+HRm = Heart rate max, calculated as 220bpm minus the participant's age (i.e., 205bpm if age == 15years).  
 
 ---
 
@@ -82,7 +82,7 @@ HRm = Heart rate max, calculated as 220bpm minus the participant's age (i.e., 20
 | highest_vas_achieved, mean (SD)  |      | 1         | 3.76 (2.15)    | 0.0, 9.1    |
 | highest_rpe_achieved, mean (SD)  |      | 0         | 15.50 (2.32)   | 8, 19       |
 
-*How I would write this up:* Among 101 participants who underwent the exercise test, a majority were routed to the easiest test branch (n=78, 77%), and a smaller proportion completed the medium and hard branches (n=18, 18%; n=3, 3%). The most commonly reported symptoms during the test were headache, endorsed by 42% (n=42) of participants, followed by dizziness (n=22, 22%), fatigue (n=11, 11%), and nausea (n=8, 8%). participant's highest achieved heart rate ranged from 120bpm to 202bpm, with a mean+/-standard deviation of 171.3+/-17.6bpm. Baseline VAS ranged from 0.0 to 6.4 (mean+/-sd = 1.98+/-1.7), and the highest VAS reached ranged from 0.0 to 9.1 (3.76+/-2.2). The highest RPE achieved during the test ranged from 8 to 19 on the Borg's RPE scale (15.5+/-2.3). 
+*How I would write this up:* Among 101 participants who underwent the exercise test, a majority were routed to the easiest test branch (n=78, 77%), and a smaller proportion completed the medium and hard branches (n=18, 18%; n=3, 3%). The most commonly reported symptoms during the test were headache, endorsed by 42% (n=42) of participants, followed by dizziness (n=22, 22%), fatigue (n=11, 11%), and nausea (n=8, 8%). The participant's highest achieved heart rate ranged from 120bpm to 202bpm, with a mean+/-standard deviation of 171.3+/-17.6bpm. Baseline VAS ranged from 0.0 to 6.4 (mean+/-sd = 1.98+/-1.7), and the highest VAS reached ranged from 0.0 to 9.1 (3.76+/-2.2). The highest RPE achieved during the test ranged from 8 to 19 on the Borg's RPE scale (15.5+/-2.3). 
 
 ---
 
@@ -185,9 +185,9 @@ With this established, the natural next question is, what percent of HRm would b
 
 We can test that! Starting at 40%HRm, we calculate RMSE (same as above, tells us how far off that estimate is from the actual HRt). Then we can do the same thing for 41% of HRm... and continue on with 1% changes up to 90%HRm. Eventually, we will get to a percentage of HRm that better predicts the HRt. And if we go too high on our percentage of HRm, our RMSE values will start to go up again. That is shown in the figure below. 
 
-**Figure 3:*** Root Mean Square Error (RMSE) representing the difference between heart rates derived from varying percentages of HRm and the actual HRt values. The y-axis shows RMSE - prediction error. The x-axis represents different percentages of HRm, ranging from 40% to 90%, used to estimate HRt. A light grey vertical line marks 50% HRm, the currently recommended clinical starting point. A dark grey vertical line highlights the optimal %HRm, which produced the lowest RMSE, indicating the most accurate prediction of HRt.
+**Figure 3:** Root Mean Square Error (RMSE) representing the difference between heart rates derived from varying percentages of HRm and the actual HRt values. The y-axis shows RMSE prediction error. The x-axis represents different percentages of HRm, ranging from 40% to 90%, used to estimate HRt. A light grey vertical line marks 50% HRm, the currently recommended clinical starting point. A dark grey vertical line highlights the optimal %HRm, which produced the lowest RMSE, indicating the most accurate prediction of HRt.
 <img src="figs/Figure3.png" alt="HRm vs RMSE" width="1000">  
-*Interpretation:* A prescription of 50%HRm generates predictions with substantial error compared to actual HRt values. Prescribing a higher percent of HRm decreases error, but only up to about 75% of HRm. Above that, and we are over-predicting heart rate, so our error starts to increase again.  
+*Interpretation:* A prescription of 50%HRm generates predictions with substantial error compared to actual HRt values. Prescribing a higher percent of HRm decreases error, but only up to about 75% of HRm. Above that, we start to over-predict heart rate, and our error starts to increase again.  
 
 Therefore, 76%HRm is a better predictor of HRt than 50%HRm. We can visualize this as well: 
 
@@ -202,7 +202,7 @@ RMSE: 15.6
 AME: 12.1  
 Days to capture: 2.13  
 
-**Figure D (include in text if you want, but not necessary):** Residuals comparing the actual HRt and the predicting heart rate derived from 50%HRm and 75%HRm methods.
+**Figure D (include in text if you want, but not necessary):** Residuals comparing the actual HRt and the predicted heart rate derived from 50%HRm and 75%HRm methods.
 <img src="figs/Residuals.png" alt="Residuals" width="1000">  
 
 --- 
@@ -217,9 +217,9 @@ Days to capture: 2.13
 
 Sooooooo, the question is: Can we take this existing HRm method and account for some other important participant characteristics? 
 
-We identified earlier that HRt is univariably associated with only a few factors: PCSI score, age, Neck Disability Index score, and HADS depression score. If we wanted to add one more factor to the model, we could adjust for time since injury, even though it was not significant. Adding time since injury essentially controls for the amount of 'recovery' that could've happened before the participant arrives in our lab for exercise testing. 
+We identified earlier that HRt is univariably associated with only a few factors: PCSI score, age, Neck Disability Index score, and HADS depression score. If we wanted to add one more factor to the model, we could add time since injury, even though it was not significant. Adding time since injury essentially controls for the amount of 'recovery' that could've happened before the participant arrives in our lab for exercise testing. 
 
-**Results of personalize predictive model (N=83 due to missing data in predictors):***
+**Results of personalized predictive model (N=83 due to missing data in predictors):**
 
 **Table E (not for text):** I was concerned about multicolinearity when including PCSI, time to visit, NDI and HADS depression subscores all in the same model. Oftentimes, these factors move together. However, VIF was low for all variables, so it must not be an issue. No need to include this information in the manuscript; I'm just showing David that I checked for VIF. :)
 | Feature  | Variance of Inflation Factor (VIF) |
@@ -266,12 +266,12 @@ No need to include in text. Just showing here. **Intercept must be significant f
 ## Visualize! 
 **Figure E:** Prediction model plotted alongside the actual bike test HRt values. 
 <img src="figs/Prediction_model.png" alt="prediction model" width="1000">  
-*Interpretation:* The prediction model is "bouncing around", which may seem less than ideal. But this is very good because it shows that the model is capturing meaningful individual differences based on factors like age, symptoms, and other clinical variables. Rather than assigning the same heart rate prescription to everyone, the model produces a wide range of HRt predictions, from around 165 bpm down to 140 bpm. Yahoo for personalized medicine! 
+*Interpretation:* The prediction model is "bouncing around", which may seem less than ideal. But this is very good because it shows that the model is capturing meaningful individual differences based on factors like age, symptoms, and other clinical variables. Rather than assigning the same heart rate prescription to everyone, the model produces a wide range of HRt predictions, from around 165 bpm down to 140 bpm. AKA personalized medicine! 
 
 --- 
 
 ## Confidence Intervals:
-There are two approaches we can use to calculate confidence intervals (CI). We can base the CI on inference about the population mean, or we can base it on the observed error in individual predictions. These may sound similar, but here’s the difference:
+There are two approaches we can use to calculate confidence intervals (CI). We can base the CI on inference about the population mean, or we can base it on the observed error in individual predictions. These sound similar, but here’s the difference:
 
 **CIs based on model coefficients**  
 How to calculate:
@@ -294,8 +294,8 @@ CI width: 14.6 bpm, range = 7.5, 33.4
 
 **CIs based on prediction intervals:**  
 Given this subject’s values, what is the range of values within which we expect their HRt to fall, accounting for individual variability?
-- In other words, when estimating the population mean (as in the previous section), we can use a narrow confidence interval because we assume the sample is a good reflection of the population.
-  - But when estimating an individual’s true value, there is more uncertainty because individuals can vary a lot - even among those with similar characteristics.
+- In other words, when estimating the population mean (as above), we can use a narrow confidence interval because we assume the sample is a good reflection of the population.
+  - But when estimating an individual’s true value, there is more uncertainty because individuals can vary a lot, even among those with similar characteristics.
 - So, we include an additional error term, which increases the width of the confidence interval to account for this variability.
 
 The calculation is nearly the same as for the population-based CI, except:
@@ -313,6 +313,16 @@ Capture rate: 82.8%
 PI width: 38.7 bpm, range = 37.7, 43.2  
 
 ---
+
+# Summary of predictions
+
+1. 50%HRm is too low
+2. 76%HRm is better but fails to account for individual factors that affect HRt and instead returns the same recommendation for everyone
+3. A prediction model that uses age, PCSI score, time since injury, Neck Disability score, and HADS depression score can predict HRt with better accuracy.
+   a. When using a 95% CI, we get a slightly larger interval of possible HRt values. But still a reasonably sized interval with good accuracy.
+   b. When using an 80% PI (prediction interval that accounts for individual variability), we get a much larger interval size. So large, in fact, that it becomes clinically meaningless.
+
+--- 
 
 # Statistical Methods Write-up
 
