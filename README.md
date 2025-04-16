@@ -318,9 +318,9 @@ PI width: 38.7 bpm, range = 37.7, 43.2
 
 1. 50%HRm is too low
 2. 76%HRm is better but fails to account for individual factors that affect HRt and instead returns the same recommendation for everyone
-3. A prediction model that uses age, PCSI score, time since injury, Neck Disability score, and HADS depression score can predict HRt with better accuracy.
-   a. When using a 95% CI, we get a slightly larger interval of possible HRt values. But still a reasonably sized interval with good accuracy.
-   b. When using an 80% PI (prediction interval that accounts for individual variability), we get a much larger interval size. So large, in fact, that it becomes clinically meaningless.
+3. A prediction model that uses age, PCSI score, time since injury, Neck Disability score, and HADS depression score can predict HRt with better accuracy.  
+   a. When using a 95% CI, we get a slightly larger interval of possible HRt values. But still a reasonably sized interval with good accuracy.  
+   b. When using an 80% PI (prediction interval that accounts for individual variability), we get a much larger interval size. So large, in fact, that it becomes clinically meaningless.  
 
 --- 
 
@@ -332,7 +332,8 @@ To complete when we have agreed on an approach...
 ---
 
 # Prediction Calculator 
-**Not medical advice** Please do not sue me... I am judgment-proof anyway. ;)  
+**Not medical advice!**  
+Please do not sue me... I am judgment-proof anyway. ;)  
 
 https://wingersonmj.github.io/Exercise_test_HRm/
 
