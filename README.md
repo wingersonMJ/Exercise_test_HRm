@@ -59,7 +59,7 @@ HRm = Heart rate max, calculated as 220bpm minus the participant's age (i.e., 20
 *Interpretation:* This is the same density plot as above, but with the N=4 outlier subjects removed. 
 
 ## Exercise test performance:
-**Figure 1:** Changes in heart rate, symptoms (visual analog scale), and rating of perceived exertion throughout the exercise test. Mean values at each minute were calculated and plotted for those who stopped due to symptom exacerbation vs those who reached exhaustion or completed the protocol. 
+**Figure 1:** Changes in heart rate, symptoms (visual analog scale), and rating of perceived exertion throughout the exercise test. Mean values at each minute were calculated and plotted for those who stopped due to symptom exacerbation (solid lines) vs those who reached exhaustion or completed the protocol (dashed lines). 
 <img src="figs/Figure1.png" alt="exercise test performance" width="1000">  
 *Interpretation:* No significant differences in the heart rate achieved during the test, or in the progression of heart rate throughout the test, between those who stopped due to symptoms and those who reached exhaustion or completed the protocol. 
 
