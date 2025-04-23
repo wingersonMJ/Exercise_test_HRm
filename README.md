@@ -89,7 +89,7 @@ HRm = Heart rate max, calculated as 220bpm minus the participant's age (i.e., 20
 ## Factors associated with stop criteria:
 **Table 1:** Comparison of participant demographics, injury, and clinical characteristics between those who experienced symptom exacerbation during the test and those who reached exhaustion or completed the protocol. 
 **Katelyn, you will need to clean these tables up to make publication ready**
-|                                  |      | Missing   | Overall        | exercise tollerant | Exhaustion/exercise intollerant | P-Value   |
+|                                  |      | Missing   | Overall        | exercise intollerant | Exhaustion/exercise tollerant | P-Value   |
 |----------------------------------|------|-----------|----------------|----------------|----------------|-----------|
 | n                                |      |           | 101            | 23             | 78             |           |
 | Age (years), mean (SD)           |      | 1         | 15.87 (1.48)   | 16.05 (1.51)   | 15.82 (1.47)   | 0.527     |
