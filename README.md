@@ -175,7 +175,7 @@ The 50%HRm method also comes with a progression component. Patients are to begin
 
 Capture rate: 0%  
 RMSE: 54.4  
-AME: 52.1  
+MAE: 52.1  
 Days needed to capture: 6.08 days  
 
 ---
@@ -199,7 +199,7 @@ Days to capture can also be estimated for 76%HRm. Assuming a patient adjusts the
 
 capture rate: 27.0%  
 RMSE: 15.6  
-AME: 12.1  
+MAE: 12.1  
 Days to capture: 2.13  
 
 **Figure D (include in text if you want, but not necessary):** Residuals comparing the actual HRt and the predicted heart rate derived from 50%HRm and 75%HRm methods.
@@ -233,7 +233,7 @@ We identified earlier that HRt is univariably associated with only a few factors
 After developing the prediction model, we get an equation that shows how each factor affects the target heart rate. We can also evaluate performance metrics in the same way as above. RMSE and MAE are 13.9 bpm and 10.9 bpm, respectively. Adjusted R2 is a measure of how well our model captures the variations in HRt. Typically, something above 0.20 (or 20%) is a good value. Our adjusted R2 is 0.09, which means this prediction model is only explaining 9% of the variance in HRt. Not great, but this only means that there are lots of other factors that we have not measured that affect HRt, so more research to be done! 
 
 RMSE: 13.98  
-AME: 10.9  
+MAE: 10.9  
 Adj R2: 0.09  
 
 **Model Equation:**  
